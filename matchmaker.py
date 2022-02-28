@@ -16,16 +16,31 @@ from sendgrid.helpers.mail import Mail
 import pandas as pd
 from pandas import read_csv
 from pandas import DataFrame
+people = []
 
 def loadCSV():
     file = os.path.join(os.path.dirname(__file__), "data","input.csv")    
-    global products
-    products = read_csv(file)
-    products = products.to_dict('records')
+    global people
+    people = read_csv(file)
+    people = people.to_dict('records')
     print("Data file Successfully Loaded")
     #print(products)
     #print(products_csv)
-    return products
+    return people
+
+def sort():
+    qImportance = 0
+    questionNum = 0
+
+class Lover:
+    #attributes
+    emailTail = "@georgetown.edu"
+    
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
 if __name__ == "__main__":
+    print(people[1][1])
+    
     
