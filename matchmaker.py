@@ -57,6 +57,7 @@ def compare():
         q2Check = 100
         q3Check = 100
         matchPerson = 0
+        matchIndex = 0
         while(i<lenL):
             op = lovers[i]
             while(ii<lenL):
@@ -74,8 +75,39 @@ def compare():
                     q3Compat = abs(op.q3 - lovers[suitorID[ii]].q3)
                     matchScore = q1Compat + q2Compat + q3Compat
                     matchPerson = suitorID[ii].name
+                    matchIndex = ii
                 ii = ii + 1
+            del lovers[i]
+            del lovers[matchIndex]
             i = i + 1            
+
+def sendEmail():
+    load_dotenv()
+    SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY", default="OOPS, please set env var called 'SENDGRID_API_KEY'")
+    SENDER_ADDRESS = os.getenv("SENDER_ADDRESS", default="OOPS, please set env var called 'SENDER_ADDRESS'")
+    email = input("Enter your email to receive an email receipt or enter N\n\n")
+    
+    client = SendGridAPIClient(SENDGRID_API_KEY) #> <class 'sendgrid.sendgrid.SendGridAPIClient>
+    if(email == "n" or email == "N"):
+        return 0
+    else:
+    
+        subject = "Your Match from AASA MatchMaker"
+        html_content = ""
+            
+        # FYI: we'll need to use our verified SENDER_ADDRESS as the `from_email` param
+        # ... but we can customize the `to_emails` param to send to other addresses
+        message = Mail(from_email=SENDER_ADDRESS, to_emails=email, subject=subject, html_content=html_content)
+        
+        try:
+            response = client.send(message)    
+            #print("RESPONSE:", type(response)) #> <class 'python_http_client.client.Response'>
+            #print(response.status_code) #> 202 indicates SUCCESS
+            #print(response.body)
+            #print(response.headers)    
+        except Exception as err:
+            print(type(err))
+            print(err)
 
 def assign():
     i = 0
