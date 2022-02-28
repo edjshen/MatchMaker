@@ -77,6 +77,7 @@ def compare():
                     matchPerson = suitorID[ii].name
                     matchIndex = ii
                 ii = ii + 1
+            print("Pair " + i + "= " + op + " & " + matchPerson)
             del lovers[i]
             del lovers[matchIndex]
             i = i + 1            
