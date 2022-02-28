@@ -17,8 +17,9 @@ import pandas as pd
 from pandas import read_csv
 from pandas import DataFrame
 people = []
+lovers = []
 lenP = len(people)
-
+lenL = len(lovers)
 class Lover:
     #attributes
     emailTail = "@georgetown.edu"
@@ -35,25 +36,60 @@ def loadCSV():
     print("Data file Successfully Loaded")
     #print(products)
     #print(products_csv)
+    lenP = len(people)
+    
     return people
 
-def sort():
-    qImportance = 0
-    questionNum = 0
+
+def compare():
+        op = lovers[1]
+        i = 0
+        ii = 0
+        quality = 0
+        suitorID = []
+        count = 0
+        counter = 0
+        q1Compat = 0
+        q2Compat = 0
+        q3Compat = 0
+        matchScore = 0
+        q1Check = 100
+        q2Check = 100
+        q3Check = 100
+        matchPerson = 0
+        while(i<lenL):
+            op = lovers[i]
+            while(ii<lenL):
+                if(i != ii):
+                    suitorID.append(ii)
+                if(abs(op.q1 - lovers[suitorID[ii]].q1)<q1Compat):
+                    q1Check = 1                    
+                if(abs(op.q2 - lovers[suitorID[ii]].q2)<q2Compat):
+                    q2Check = 1   
+                if(abs(op.q3 - lovers[suitorID[ii]].q3)<q3Compat):
+                    q3Check = 1
+                if (q1Check & q2Check & q3Check):
+                    q1Compat = abs(op.q1 - lovers[suitorID[ii]].q1)
+                    q2Compat = abs(op.q2 - lovers[suitorID[ii]].q2)
+                    q3Compat = abs(op.q3 - lovers[suitorID[ii]].q3)
+                    matchScore = q1Compat + q2Compat + q3Compat
+                    matchPerson = suitorID[ii].name
+                ii = ii + 1
+            i = i + 1            
 
 def assign():
     i = 0
     dicty = {}
+    global list
     for number in range(1,lenP):
         dicty["Person%s" %number] = Lover(people[1][1],people[1][2],people[1][3],people[1][4],people[1][5])
-        listy = list(dicty.values)'
-        
-    print(listy)
+        lovers = list(dicty.values)
+    lenL = len(lovers)
+
 
 if __name__ == "__main__":
-    #loadCSV()
-    #person = Lover("name")
-    #print(people[1][1])
+    loadCSV()   
     assign()
+    compare()
     
     
