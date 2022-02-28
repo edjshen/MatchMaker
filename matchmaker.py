@@ -17,6 +17,15 @@ import pandas as pd
 from pandas import read_csv
 from pandas import DataFrame
 people = []
+lenP = len(people)
+
+class Lover:
+    #attributes
+    emailTail = "@georgetown.edu"
+    
+    def __init__(self, name, age, q1,q2,q3):
+        self.name = name
+        self.age = age
 
 def loadCSV():
     file = os.path.join(os.path.dirname(__file__), "data","input.csv")    
@@ -32,15 +41,19 @@ def sort():
     qImportance = 0
     questionNum = 0
 
-class Lover:
-    #attributes
-    emailTail = "@georgetown.edu"
-    
-    def __init__(self, name, age, q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15):
-        self.name = name
-        self.age = age
+def assign():
+    i = 0
+    dicty = {}
+    for number in range(1,lenP):
+        dicty["Person%s" %number] = Lover(people[1][1],people[1][2],people[1][3],people[1][4],people[1][5])
+        listy = list(dicty.values)'
+        
+    print(listy)
 
 if __name__ == "__main__":
-    print(people[1][1])
+    #loadCSV()
+    #person = Lover("name")
+    #print(people[1][1])
+    assign()
     
     
