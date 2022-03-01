@@ -50,9 +50,9 @@ def compare():
         suitorID = []
         count = 0
         counter = 0
-        q1Compat = 0
-        q2Compat = 0
-        q3Compat = 0
+        q1Compat = 100
+        q2Compat = 100
+        q3Compat = 100
         matchScore = 0
         q1Check = 100
         q2Check = 100
@@ -77,9 +77,12 @@ def compare():
                     suitorID.append(ii)
                     go = 1
                 if(go == 1):
+                    #print(op.q1 - lovers[suitorID[ii-1]].q1)
+                    #print(q1Compat)
                     if(abs(op.q1 - lovers[suitorID[ii-1]].q1)<q1Compat):
                         temp1 = op.q1 - lovers[suitorID[ii-1]].q1
-                        q1Check = 1                    
+                        q1Check = 1           
+                        #print("yuh")
                     if(abs(op.q2 - lovers[suitorID[ii-1]].q2)<q2Compat):
                         temp2 = op.q2 - lovers[suitorID[ii-1]].q2
                         q2Check = 1   
@@ -88,7 +91,13 @@ def compare():
                         q3Check = 1
                     if (q1Check or q2Check or q3Check):
                         tempTot = temp1+ temp2+ temp3
+                        #print(tempTot)
+                        #print(matchScore)
+                        #print(temp1)
+                        #print(temp2)
+                        #print(temp3)
                         if(tempTot>matchScore):
+                            #print("heyo")
                             #q1Compat = abs(op.q1 - lovers[suitorID[ii-1]].q1)
                             #q2Compat = abs(op.q2 - lovers[suitorID[ii-1]].q2)
                             #q3Compat = abs(op.q3 - lovers[suitorID[ii-1]].q3)
@@ -98,7 +107,7 @@ def compare():
                             matchIndex = ii
                 ii = ii + 1
                 go = 0
-            print("Pair " + str(i) + " = " + op.name + " & " + matchPerson)
+            print("Pair " + str(i+1) + " = " + op.name + " & " + matchPerson)
             print("Your match score is " + str(matchScore))
             #del lovers[i]
             #del lovers[matchIndex]
