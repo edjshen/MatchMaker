@@ -4,9 +4,6 @@ Created on Sun Feb 27 17:36:31 2022
 
 @author: edjsh
 """
-
-print("Hello")
-
 from datetime import datetime
 import os
 from dotenv import load_dotenv
@@ -24,13 +21,13 @@ class Lover:
     #attributes
     emailTail = "@georgetown.edu"
     
-    def __init__(self, name, age, q1,q2,q3):
-        self.name = name
-        self.age = age
+    def __init__(self,name, email,q1,q2,q3):
+        self.email = email
 
 def loadCSV():
-    file = os.path.join(os.path.dirname(__file__), "data","input.csv")    
+    file = os.path.join(os.path.dirname(__file__), "data","data - Form Responses 1.csv")    
     global people
+    global lenP
     people = read_csv(file)
     people = people.to_dict('records')
     print("Data file Successfully Loaded")
@@ -114,10 +111,18 @@ def assign():
     i = 0
     dicty = {}
     global list
+    global people
+    global lovers
     for number in range(1,lenP):
-        dicty["Person%s" %number] = Lover(people[1][1],people[1][2],people[1][3],people[1][4],people[1][5])
-        lovers = list(dicty.values)
-    lenL = len(lovers)
+        dicty["Person%s" %number] = Lover(people[1]["Name"],people[1]["Georgetown Email Address"],
+                                          people[1]['Do you believe in love at first sight?'],
+                                          people[1]['how much do you love sea lions'],
+                                          people[1]['will you marry me'])
+        
+        lovers = DataFrame.from_dict(dicty.values)
+        lovers = list(lovers)
+    #print(lovers)
+    #lenL = len(lovers)
 
 
 if __name__ == "__main__":
