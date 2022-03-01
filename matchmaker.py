@@ -14,15 +14,19 @@ import pandas as pd
 from pandas import read_csv
 from pandas import DataFrame
 people = []
-lovers = []
+lovers = {}
 lenP = len(people)
 lenL = len(lovers)
 class Lover:
     #attributes
     emailTail = "@georgetown.edu"
     
-    def __init__(self,name, email,q1,q2,q3):
+    def __init__(self,name,email,q1,q2,q3):
+        self.name = name
         self.email = email
+        self.q1 = q1
+        self.q2 = q2
+        self.q3 = q3
 
 def loadCSV():
     file = os.path.join(os.path.dirname(__file__), "data","data - Form Responses 1.csv")    
@@ -55,8 +59,10 @@ def compare():
         q3Check = 100
         matchPerson = 0
         matchIndex = 0
+        global lenL
         while(i<lenL):
             op = lovers[i]
+            #print(lovers[suitorID[ii]].q1)
             while(ii<lenL):
                 if(i != ii):
                     suitorID.append(ii)
@@ -109,18 +115,22 @@ def sendEmail():
 
 def assign():
     i = 0
+    global lenL
     dicty = {}
     global list
     global people
     global lovers
-    for number in range(1,lenP):
-        dicty["Person%s" %number] = Lover(people[1]["Name"],people[1]["Georgetown Email Address"],
-                                          people[1]['Do you believe in love at first sight?'],
-                                          people[1]['how much do you love sea lions'],
-                                          people[1]['will you marry me'])
+    while (i<lenP):
+        dicty["Person%s" %i] = Lover(people[i]["Name"],
+                                          people[i]["Georgetown Email Address"],
+                                          people[i]['Do you believe in love at first sight?'],
+                                          people[i]['how much do you love sea lions'],
+                                          people[i]['will you marry me'])
+        i = i+1
         
-        lovers = DataFrame.from_dict(dicty.values)
-        lovers = list(lovers)
+    #lovers = DataFrame.from_dict(dicty.values)
+    lovers = list(dicty.values())
+    lenL = len(lovers)
     #print(lovers)
     #lenL = len(lovers)
 
