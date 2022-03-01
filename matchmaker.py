@@ -21,9 +21,10 @@ class Lover:
     #attributes
     emailTail = "@georgetown.edu"
     
-    def __init__(self,name,email,q1,q2,q3):
+    def __init__(self,name,email,match,q1,q2,q3):
         self.name = name
         self.email = email
+        self.match = match
         self.q1 = q1
         self.q2 = q2
         self.q3 = q3
@@ -43,8 +44,9 @@ def loadCSV():
 
 
 def compare():
+        global lenL
         op = lovers[1]
-        i = 0
+        i = lenL - 1
         ii = 0
         quality = 0
         suitorID = []
@@ -53,7 +55,7 @@ def compare():
         q1Compat = 100
         q2Compat = 100
         q3Compat = 100
-        matchScore = 0
+        matchScore = 100
         q1Check = 100
         q2Check = 100
         q3Check = 100
@@ -63,22 +65,23 @@ def compare():
         empty = 1
         temp1 = 0
         temp2 = 0
-        temp3 = 0
-        global lenL
-        while(i<lenL):
+        temp3 = 0        
+        while(i>0):
             if(lovers):
                 print("---")
             else:
                 empty = 0
             if empty == 1:
-                op = lovers[i]
+                #print(lovers)
+                op = lovers[lenL-i]
             while(ii<lenL):
+                lenL = len(lovers)
                 if(i != ii):
                     suitorID.append(ii)
                     go = 1
                 if(go == 1):
                     #print(op.q1 - lovers[suitorID[ii-1]].q1)
-                    #print(q1Compat)
+                   # print(q1Compat)
                     if(abs(op.q1 - lovers[suitorID[ii-1]].q1)<q1Compat):
                         temp1 = op.q1 - lovers[suitorID[ii-1]].q1
                         q1Check = 1           
@@ -91,27 +94,30 @@ def compare():
                         q3Check = 1
                     if (q1Check or q2Check or q3Check):
                         tempTot = temp1+ temp2+ temp3
+                        #print("YAAAA")
                         #print(tempTot)
                         #print(matchScore)
                         #print(temp1)
                         #print(temp2)
                         #print(temp3)
-                        if(tempTot>matchScore):
+                        if(tempTot<matchScore):
                             #print("heyo")
                             #q1Compat = abs(op.q1 - lovers[suitorID[ii-1]].q1)
                             #q2Compat = abs(op.q2 - lovers[suitorID[ii-1]].q2)
                             #q3Compat = abs(op.q3 - lovers[suitorID[ii-1]].q3)
                             #matchScore = q1Compat + q2Compat + q3Compat
                             matchScore = tempTot
-                            matchPerson = lovers[suitorID[ii-1]].name
-                            matchIndex = ii
+                            matchPerson = lovers[suitorID[ii]].name
+                            matchIndex = ii                           
+                            lovers.pop(suitorID[ii])
+                            lovers.pop(i-1)
                 ii = ii + 1
                 go = 0
             print("Pair " + str(i+1) + " = " + op.name + " & " + matchPerson)
             print("Your match score is " + str(matchScore))
             #del lovers[i]
             #del lovers[matchIndex]
-            i = i + 1            
+            i = i - 1            
 
 def sendEmail():
     load_dotenv()
