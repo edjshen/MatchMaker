@@ -21,9 +21,11 @@ class Lover:
     #attributes
     emailTail = "@georgetown.edu"
     
-    def __init__(self,name,email,match,q1,q2,q3):
+    def __init__(self,name,email,gender, orient ,match,q1,q2,q3):
         self.name = name
         self.email = email
+        self.gender = gender
+        self.orient = orient
         self.match = match
         self.q1 = q1
         self.q2 = q2
