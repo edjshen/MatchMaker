@@ -57,32 +57,51 @@ def compare():
         q1Check = 100
         q2Check = 100
         q3Check = 100
-        matchPerson = 0
+        matchPerson = ""
         matchIndex = 0
+        go = 0
+        empty = 1
+        temp1 = 0
+        temp2 = 0
+        temp3 = 0
         global lenL
         while(i<lenL):
-            op = lovers[i]
-            #print(lovers[suitorID[ii]].q1)
+            if(lovers):
+                print("---")
+            else:
+                empty = 0
+            if empty == 1:
+                op = lovers[i]
             while(ii<lenL):
                 if(i != ii):
                     suitorID.append(ii)
-                if(abs(op.q1 - lovers[suitorID[ii]].q1)<q1Compat):
-                    q1Check = 1                    
-                if(abs(op.q2 - lovers[suitorID[ii]].q2)<q2Compat):
-                    q2Check = 1   
-                if(abs(op.q3 - lovers[suitorID[ii]].q3)<q3Compat):
-                    q3Check = 1
-                if (q1Check & q2Check & q3Check):
-                    q1Compat = abs(op.q1 - lovers[suitorID[ii]].q1)
-                    q2Compat = abs(op.q2 - lovers[suitorID[ii]].q2)
-                    q3Compat = abs(op.q3 - lovers[suitorID[ii]].q3)
-                    matchScore = q1Compat + q2Compat + q3Compat
-                    matchPerson = suitorID[ii].name
-                    matchIndex = ii
+                    go = 1
+                if(go == 1):
+                    if(abs(op.q1 - lovers[suitorID[ii-1]].q1)<q1Compat):
+                        temp1 = op.q1 - lovers[suitorID[ii-1]].q1
+                        q1Check = 1                    
+                    if(abs(op.q2 - lovers[suitorID[ii-1]].q2)<q2Compat):
+                        temp2 = op.q2 - lovers[suitorID[ii-1]].q2
+                        q2Check = 1   
+                    if(abs(op.q3 - lovers[suitorID[ii-1]].q3)<q3Compat):
+                        temp3 = op.q3 - lovers[suitorID[ii-1]].q3
+                        q3Check = 1
+                    if (q1Check or q2Check or q3Check):
+                        tempTot = temp1+ temp2+ temp3
+                        if(tempTot>matchScore):
+                            #q1Compat = abs(op.q1 - lovers[suitorID[ii-1]].q1)
+                            #q2Compat = abs(op.q2 - lovers[suitorID[ii-1]].q2)
+                            #q3Compat = abs(op.q3 - lovers[suitorID[ii-1]].q3)
+                            #matchScore = q1Compat + q2Compat + q3Compat
+                            matchScore = tempTot
+                            matchPerson = lovers[suitorID[ii-1]].name
+                            matchIndex = ii
                 ii = ii + 1
-            print("Pair " + i + "= " + op + " & " + matchPerson)
-            del lovers[i]
-            del lovers[matchIndex]
+                go = 0
+            print("Pair " + str(i) + " = " + op.name + " & " + matchPerson)
+            print("Your match score is " + str(matchScore))
+            #del lovers[i]
+            #del lovers[matchIndex]
             i = i + 1            
 
 def sendEmail():
