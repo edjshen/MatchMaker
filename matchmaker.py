@@ -131,7 +131,6 @@ def sendEmail():
     if(email == "n" or email == "N"):
         return 0
     else:
-    
         subject = "Your Match from AASA MatchMaker"
         html_content = ""
             
