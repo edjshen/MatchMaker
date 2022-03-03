@@ -2,7 +2,7 @@
 """
 Created on Sun Feb 27 17:36:31 2022
 
-@author: edjsh
+@author: ejs et al
 """
 from datetime import datetime
 import os
