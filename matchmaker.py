@@ -21,12 +21,12 @@ class Lover:
     #attributes
     emailTail = "@georgetown.edu"
     
-    def __init__(self,name,email,gender, orient ,match,q1,q2,q3):
+    def __init__(self,name,email,q1,q2,q3):
         self.name = name
         self.email = email
-        self.gender = gender
-        self.orient = orient
-        self.match = match
+        #self.gender = gender
+        #self.orient = orient
+        #self.match = match
         self.q1 = q1
         self.q2 = q2
         self.q3 = q3
@@ -131,7 +131,7 @@ def sendEmail():
     if(email == "n" or email == "N"):
         return 0
     else:
-        subject = "Your Match from AASA MatchMaker"
+        subject = "Your Match from MatchMaker"
         html_content = ""
             
         # FYI: we'll need to use our verified SENDER_ADDRESS as the `from_email` param
