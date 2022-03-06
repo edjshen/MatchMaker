@@ -13,10 +13,10 @@ from sendgrid.helpers.mail import Mail
 import pandas as pd
 from pandas import read_csv
 from pandas import DataFrame
-people = []
-lovers = {}
-lenP = len(people)
-lenL = len(lovers)
+
+
+
+"""
 class Lover:
     #attributes
     emailTail = "@georgetown.edu"
@@ -30,6 +30,7 @@ class Lover:
         self.q1 = q1
         self.q2 = q2
         self.q3 = q3
+"""
 
 def loadCSV():
     file = os.path.join(os.path.dirname(__file__), "data","data - Form Responses 1.csv")    
@@ -40,11 +41,11 @@ def loadCSV():
     print("Data file Successfully Loaded")
     #print(products)
     #print(products_csv)
-    lenP = len(people)
-    
+    #lenP = len(people)
+    #print(people)
     return people
 
-
+"""
 def compare():
         global lenL
         op = lovers[1]
@@ -111,8 +112,8 @@ def compare():
                             matchScore = tempTot
                             matchPerson = lovers[suitorID[ii]].name
                             matchIndex = ii                           
-                            lovers.pop(suitorID[ii])
-                            lovers.pop(i-1)
+                            trash = lovers.pop(suitorID[ii])
+                            trash = lovers.pop(i-1)
                 ii = ii + 1
                 go = 0
             print("Pair " + str(i+1) + " = " + op.name + " & " + matchPerson)
@@ -120,6 +121,23 @@ def compare():
             #del lovers[i]
             #del lovers[matchIndex]
             i = i - 1            
+"""
+
+def matchmake():
+    i = 0
+    isEmpty = 0
+    matchingMatrix = []
+    global people
+    if(len(people) == 0):
+        isEmpty = 1
+    if(isEmpty == 1):
+        print("Reached end of list")
+    else:
+        print("wait")
+        
+    
+        
+    
 
 def sendEmail():
     load_dotenv()
@@ -148,31 +166,212 @@ def sendEmail():
             print(type(err))
             print(err)
 
-def assign():
+if __name__ == "__main__":    
+    #declare variables
+    peopleX = []
+    peopleY = []
+    lenPX = 0
+    lenPY = 0
     i = 0
-    global lenL
-    dicty = {}
-    global list
-    global people
-    global lovers
-    while (i<lenP):
-        dicty["Person%s" %i] = Lover(people[i]["Name"],
-                                          people[i]["Georgetown Email Address"],
-                                          people[i]['Do you believe in love at first sight?'],
-                                          people[i]['how much do you love sea lions'],
-                                          people[i]['will you marry me'])
-        i = i+1
-        
-    #lovers = DataFrame.from_dict(dicty.values)
-    lovers = list(dicty.values())
-    lenL = len(lovers)
-    #print(lovers)
-    #lenL = len(lovers)
-
-
-if __name__ == "__main__":
-    loadCSV()   
-    assign()
-    compare()
+    q1ScorePx = 0
+    q1ScorePy = 0
+    q2ScorePx = 0
+    q2ScorePy = 0
+    q3ScorePx = 0
+    q3ScorePy = 0
+    totalPx = 0
+    totalPy = 0
+    matchScore = 0
+    matchScoreList = []
+    bestScore = 0
+    bestMatchIndex = 0
+    bestMatchName = ""
+    bestMatchList = []
+    bestScoreList = []
+    colCounter = 0
     
+    #load in data file
+    people = loadCSV() 
+    
+    #initial assignments to variables
+    peopleX = people
+    peopleY = people
+    lenPx = len(peopleX)
+    lenPy = len(peopleY)
+    lenP = len(people)
+    
+    
+    holdNames = []
+    heldName = ""
+    
+    notSame = 0
+    
+    #Looping through Person X (rows)
+    while(i<lenPx):
+        print("I am finding the perfect match for",peopleX[i]["name"])
+        #Looping through all Person Ys (Columns)
+        while(colCounter < len(peopleY)):
+            #print("heyo")
+            #print(lenPy) 
+            lenPy = len(peopleY)
+            #print("this is lenPy",lenPy)
+            #make special case for last two people
+            if(lenPy < 2):
+                print("We're on our last possible candidate!\n")
+                #print(peopleX)
+                
+                q1ScorePx = peopleX[0]["q1"]
+                q2ScorePx = peopleX[0]["q2"]
+                q3ScorePx = peopleX[0]["q3"]
+                
+                #print(peopleY)
+                
+                q1ScorePy = peopleY[1]["q1"]
+                q2ScorePy = peopleY[1]["q2"]
+                q3ScorePy = peopleY[1]["q3"]
+                
+                totalPx = q1ScorePx + q2ScorePx + q3ScorePx
+                totalPy = q1ScorePy + q2ScorePy + q3ScorePy
+                
+                matchScore = abs(totalPx - totalPy)
+                matchScoreList.append(matchScore)
+                
+                bestScore = max(matchScoreList)
+                bestMatchIndex = matchScoreList.index(bestScore)
+                bestMatchName = matchScoreList[bestMatchIndex]
+                bestMatchList.append(bestMatchName)
+                bestScoreList.append(bestScore)
+
+                peopleY.pop(matchScoreList[bestMatchIndex])
+                
+                
+            else:
+                print("There is more than 1 person left to check\n")
+                #print(peopleX)
+                #print("i am running")
+                lenPx = len(peopleX)
+                lenPy = len(peopleY)
+                #print(lenPy)
+                #print(lenPx)
+                #print(lenPy)
+                #print(str(colCounter)+"]")
+                #print(people)
+                #print("PeopleX")
+                #print(peopleX)
+                #print("PeopleY")
+                #print(peopleY)
+                
+                #Check if people are the same, if they are, skip it, if not, search
+                #(colCounter >= lenPy):
+                #    colCounter  = min(colCounter,lenPy) - 1
+                #print(peopleY)
+                #print("Length of PeopleX = ",len(peopleX))
+                #print("Length of PeopleY = ",len(peopleY))
+                #print("Length of i = ",i)
+                #print("Length of colCounter = ",colCounter)
+                if(peopleX[i]["email"] == peopleY[colCounter]["email"]):
+                    
+                    notSame = 0
+                    #print("Person X Name ",peopleX[i]["name"])
+                    #print(peopleY)
+                    #print(colCounter)
+                    #print("Person Y Name ", peopleY[colCounter]["name"])
+                else:
+                    #print(peopleX[i]["email"])
+                    #print(peopleY[colCounter]["email"])
+                    notSame = 1
+                    #print("this is i ",i)
+                    #print(peopleX)
+                    #print("Person X Name ",peopleX[i]["name"])
+                    #print(peopleY)
+                    #print(colCounter)
+                    #print("Person Y Name ", peopleY[colCounter]["name"])
+                
+                if(notSame == 1): 
+                    print(peopleY[colCounter]["name"]," is a potential match\n")
+                    print(colCounter)
+                    q1ScorePx = peopleX[i]["q1"]
+                    q2ScorePx = peopleX[i]["q2"]
+                    q3ScorePx = peopleX[i]["q3"]
+                    
+                    q1ScorePy = peopleY[colCounter]["q1"]
+                    q2ScorePy = peopleY[colCounter]["q2"]
+                    q3ScorePy = peopleY[colCounter]["q3"]
+                    
+                    totalPx = q1ScorePx + q2ScorePx + q3ScorePx
+                    totalPy = q1ScorePy + q2ScorePy + q3ScorePy
+                    #print(peopleX[i])
+                    #print(peopleY[colCounter])
+                    #print(totalPx)
+                    #print(totalPy)
+                    
+                    matchScore = abs(totalPx - totalPy)
+                    matchScoreList.append(matchScore)
+                    #print(matchScore)
+                    
+                        
+            
+    # Finding who is best match, adding them to output list, and deleting matches from general population
+
+                    #print("Length of PeopleX = ",len(peopleX))
+                    #print("Length of PeopleY = ",len(peopleY))
+                    #print("Length of i = ",i)
+                    #print("Length of colCounter = ",colCounter)
+            
+                    bestScore = max(matchScoreList)
+                    bestScoreList.append(bestScore)
+                    bestMatchIndex = matchScoreList.index(bestScore)
+                    #print("i have ran" + str(colCounter) + " Y people")
+                    #print(peopleX)
+                    bestMatchName = peopleX[bestMatchIndex]
+                    bestMatchList.append(bestMatchName)
+                    
+                    #print(peopleX)
+                    #print()
+                    #print("I am the best match", bestMatchName)
+                    #print(bestScore)
+                    #print(peopleY)
+                    holder = peopleY.pop(colCounter)
+            
+                    lenPx = len(peopleX)
+                    lenPy = len(peopleY)
+                else:
+                    #print(peopleX)
+                    print("You can't match with yourself\n")
+                    #print("i am people",people)
+                    #holder = peopleY[colCounter]
+                    #print(holder)
+                    #print(peopleX)
+                    #print("i am people x AFTER POP",people)
+                    #print(people)
+                    #peopleX = people
+                    #print(holder)
+                    #print(peopleX)
+                    #print(peopleX[i]["name"])
+                    #print(peopleY[colCounter]["name"])
+                
+            colCounter = colCounter + 1
+            #print(lenPy)
+        print("I IS ITERATING AHHHHHHHHHHHHHHHHHHHHHHHH")
+        i = i + 1
+        #Clear Variables for next iteration of PersonX
+        #colCounter = 0
+        #peopleX.pop(matchScoreList[bestMatchIndex])
+        matchScoreList = []
+        matchScore = 0
+        bestScore = 0
+        bestMatchIndex = 0
+        bestMatchName = 0
+        holder = 0
+
+        
+    
+    #Output
+    #print(bestMatchList)
+    #print(bestScoreList)
+            
+    
+    
+    
+
     
