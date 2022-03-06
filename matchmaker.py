@@ -210,7 +210,7 @@ if __name__ == "__main__":
     while(i<lenPx):
         print("I am finding the perfect match for",peopleX[i]["name"])
         #Looping through all Person Ys (Columns)
-        while(colCounter < len(peopleY)):
+        while(colCounter < lenPy):
             #print("heyo")
             #print(lenPy) 
             lenPy = len(peopleY)
@@ -289,7 +289,7 @@ if __name__ == "__main__":
                 
                 if(notSame == 1): 
                     print(peopleY[colCounter]["name"]," is a potential match\n")
-                    print(colCounter)
+                    #print(colCounter)
                     q1ScorePx = peopleX[i]["q1"]
                     q2ScorePx = peopleX[i]["q2"]
                     q3ScorePx = peopleX[i]["q3"]
@@ -331,7 +331,7 @@ if __name__ == "__main__":
                     #print("I am the best match", bestMatchName)
                     #print(bestScore)
                     #print(peopleY)
-                    holder = peopleY.pop(colCounter)
+                    #holder = peopleY.pop(colCounter)
             
                     lenPx = len(peopleX)
                     lenPy = len(peopleY)
@@ -352,11 +352,15 @@ if __name__ == "__main__":
                 
             colCounter = colCounter + 1
             #print(lenPy)
-        print("I IS ITERATING AHHHHHHHHHHHHHHHHHHHHHHHH")
+            print(colCounter)
+        #print("I IS ITERATING AHHHHHHHHHHHHHHHHHHHHHHHH")
+        #holder = peopleX.pop(i)
+        print(peopleX[i])
         i = i + 1
         #Clear Variables for next iteration of PersonX
         #colCounter = 0
         #peopleX.pop(matchScoreList[bestMatchIndex])
+        colCounter = 0
         matchScoreList = []
         matchScore = 0
         bestScore = 0
