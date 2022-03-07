@@ -302,8 +302,8 @@ if __name__ == "__main__":
                     totalPy = q1ScorePy + q2ScorePy + q3ScorePy
                     #print(peopleX[i])
                     #print(peopleY[colCounter])
-                    #print(totalPx)
-                    #print(totalPy)
+                    print(totalPx)
+                    print(totalPy)
                     
                     matchScore = abs(totalPx - totalPy)
                     matchScoreList.append(matchScore)
@@ -349,13 +349,15 @@ if __name__ == "__main__":
                     #print(peopleX)
                     #print(peopleX[i]["name"])
                     #print(peopleY[colCounter]["name"])
-                
+            
             colCounter = colCounter + 1
+            print("i have looped ",colCounter," times")
             #print(lenPy)
-            print(colCounter)
+            #print(colCounter)
         #print("I IS ITERATING AHHHHHHHHHHHHHHHHHHHHHHHH")
         #holder = peopleX.pop(i)
-        print(peopleX[i]["name"],"'s"," best match is " , bestMatchName)
+        print(bestScoreList)
+        print(peopleX[i]["name"],"'s"," best match is " , bestMatchList[i])
         #print(peopleX[i])
         i = i + 1
         #Clear Variables for next iteration of PersonX
@@ -368,6 +370,7 @@ if __name__ == "__main__":
         bestMatchIndex = 0
         bestMatchName = 0
         holder = 0
+        bestScoreList =[]
 
         
     
