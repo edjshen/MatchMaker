@@ -14,24 +14,6 @@ import pandas as pd
 from pandas import read_csv
 from pandas import DataFrame
 
-
-
-"""
-class Lover:
-    #attributes
-    emailTail = "@georgetown.edu"
-    
-    def __init__(self,name,email,q1,q2,q3):
-        self.name = name
-        self.email = email
-        #self.gender = gender
-        #self.orient = orient
-        #self.match = match
-        self.q1 = q1
-        self.q2 = q2
-        self.q3 = q3
-"""
-
 def loadCSV():
     file = os.path.join(os.path.dirname(__file__), "data","data - Form Responses 1.csv")    
     global people
@@ -44,22 +26,7 @@ def loadCSV():
     #lenP = len(people)
     #print(people)
     return people
-
-def matchmake():
-    i = 0
-    isEmpty = 0
-    matchingMatrix = []
-    global people
-    if(len(people) == 0):
-        isEmpty = 1
-    if(isEmpty == 1):
-        print("Reached end of list")
-    else:
-        print("wait")
         
-    
-        
-    
 
 def sendEmail():
     load_dotenv()
