@@ -61,7 +61,7 @@ def isEmpty(lis1):
     else:
         return 1
 
-if __name__ == "__main__":    
+def alg():   
     #declare variables
     peopleX = []
     peopleY = []
@@ -89,7 +89,6 @@ if __name__ == "__main__":
     
     #load in data file
     people = loadCSV() 
-    
     #initial assignments to variables
     peopleX = people
     peopleY = people
@@ -102,6 +101,12 @@ if __name__ == "__main__":
     heldName = ""
     
     notSame = 0
+    
+    #automating question indexing
+    couting = 0
+    
+    #while(counting < len(people[0].keys())-2):
+        
     
     #Looping through Person X (rows)
     while(isEmpty(peopleX)):
@@ -301,11 +306,10 @@ if __name__ == "__main__":
         #delete match made
         
         
-        print(trash, "is trash")
+        #print(trash, "is trash")
         
         #print(peopleX)
         
-    print(peopleX)
     #calculating match percentage
     maxPerc = 30.00
     counterP = 0
@@ -326,7 +330,13 @@ if __name__ == "__main__":
         print("Score: ", matchPercentList[counterV],"%")
         print("--------------------------")
         counterV = counterV + 1
-            
+        
+ 
+if __name__ == "__main__": 
+    
+    alg()
+    people = loadCSV()
+    print(people)
     
     
     

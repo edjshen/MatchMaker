@@ -1,3 +1,2 @@
 -Add Preferences ie gender, sexual orientation
--Make matching non-duplicitous ie removing matches once a best match as been found
-- making sure the i ordering doesn't get off
+-adding support for more questions
