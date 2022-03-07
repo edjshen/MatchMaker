@@ -1,0 +1,2 @@
+-Add Preferences ie gender, sexual orientation
+-Make matching non-duplicitous ie removing matches once a best match as been found

@@ -309,10 +309,7 @@ if __name__ == "__main__":
                     
                     matchScore = abs(totalPx - totalPy)
                     matchScoreList.append(matchScore)
-                    
-                    
-                        
-            
+                               
     # Finding who is best match, adding them to output list, and deleting matches from general population
 
                     #print("Length of PeopleX = ",len(peopleX))
@@ -390,13 +387,23 @@ if __name__ == "__main__":
 
         
     
+    #calculating match percentage
+    maxPerc = 30.00
+    counterP = 0
+    matchPercentList = []
+    while(counterP < len(outputMatchesList)):     
+        matchPercentage = round(1-(outputMatchesList[counterP]["score"]/maxPerc),4)*100
+        matchPercentList.append(matchPercentage)
+        counterP = counterP + 1
+    
+    
     #Output
     counterV = 0
     
     while(counterV < len(outputMatchesList)):
         print("Name: ", outputMatchesList[counterV]["name"])
         print("Partner Name: ", outputMatchesList[counterV]["partner"])
-        print("Score: ", outputMatchesList[counterV]["score"])
+        print("Score: ", matchPercentList[counterV],"%")
         print("--------------------------")
         counterV = counterV + 1
             
