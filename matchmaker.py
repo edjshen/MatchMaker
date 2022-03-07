@@ -123,6 +123,7 @@ if __name__ == "__main__":
                 q2ScorePx = peopleX[0]["q2"]
                 q3ScorePx = peopleX[0]["q3"]
                 
+                
                 #print(peopleY)
                 
                 q1ScorePy = peopleY[1]["q1"]
@@ -282,7 +283,11 @@ if __name__ == "__main__":
         i = i + 1
         #Clear Variables for next iteration of PersonX
         #colCounter = 0
+        
         #peopleX.pop(matchScoreList[bestMatchIndex])
+        
+        trash = peopleY.pop(bestMatchIndex+1)
+        peopleX.pop(0)
         colCounter = 0
         matchScoreList = []
         matchScore = 0
@@ -295,8 +300,9 @@ if __name__ == "__main__":
         
         #delete match made
         
-        peopleY.pop(bestMatchIndex)
-        peopleX.pop(0)
+        
+        print(trash, "is trash")
+        
         #print(peopleX)
         
     print(peopleX)
@@ -312,7 +318,8 @@ if __name__ == "__main__":
     
     #Output
     counterV = 0
-    
+    print("OUTPUTS")
+    print("--------------------------")
     while(counterV < len(outputMatchesList)):
         print("Name: ", outputMatchesList[counterV]["name"])
         print("Partner Name: ", outputMatchesList[counterV]["partner"])
