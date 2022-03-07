@@ -209,13 +209,15 @@ if __name__ == "__main__":
     notSame = 0
     
     #Looping through Person X (rows)
-    while(i<lenPx):
+    while(i<(lenPx/2)):
+        print("This is i ", i)
+        print(peopleX)
         print("I am finding the perfect match for",peopleX[i]["name"])
         #Looping through all Person Ys (Columns)
         while(colCounter < lenPy):
             #print("heyo")
             #print(lenPy) 
-            lenPy = len(peopleY)
+            #lenPy = len(peopleY)
             #print("this is lenPy",lenPy)
             #make special case for last two people
             if(lenPy < 2):
@@ -237,14 +239,25 @@ if __name__ == "__main__":
                 
                 matchScore = abs(totalPx - totalPy)
                 matchScoreList.append(matchScore)
-                
+                """
                 bestScore = max(matchScoreList)
                 bestMatchIndex = matchScoreList.index(bestScore)
                 bestMatchName = matchScoreList[bestMatchIndex]
                 bestMatchList.append(bestMatchName)
                 bestScoreList.append(bestScore)
+                """
+                
+                bestScore = min(matchScoreList)
+                bestMatchIndex = matchScoreList.index(bestScore)
+                
+                print(peopleX[i]["name"],"'s"," best match is " , bestMatchName)
+                print("My match score with", bestMatchName, " is ", matchScoreList[bestMatchIndex])
+                outputMatches = {"name" : peopleX[i]["name"], "score" : matchScoreList[bestMatchIndex],
+                                 "partner" : bestMatchName}
+                outputMatchesList.append(outputMatches)
 
-                peopleY.pop(matchScoreList[bestMatchIndex])
+                #peopleY.pop(matchScoreList[bestMatchIndex])
+                print("I AM RUNINGDKADLFJADLKFJAD;FJDA;KLJFKLADSF")
                 
                 
             else:
@@ -384,7 +397,12 @@ if __name__ == "__main__":
         holder = 0
         bestScoreList =[]
         bestMatchList=[]
-
+        
+        #delete match made
+        
+        peopleY.pop(bestMatchIndex)
+        peopleX.pop(0)
+        print(peopleX)
         
     
     #calculating match percentage
