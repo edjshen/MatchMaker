@@ -57,9 +57,9 @@ def sendEmail():
             
 def isEmpty(lis1):
     if not lis1:
-        return 1
-    else:
         return 0
+    else:
+        return 1
 
 if __name__ == "__main__":    
     #declare variables
@@ -104,10 +104,10 @@ if __name__ == "__main__":
     notSame = 0
     
     #Looping through Person X (rows)
-    while(i<(lenPx/2)):
+    while(isEmpty(peopleX)):
         print("This is i ", i)
         print(peopleX)
-        print("I am finding the perfect match for",peopleX[i]["name"])
+        print("I am finding the perfect match for",peopleX[0]["name"])
         #Looping through all Person Ys (Columns)
         while(colCounter < lenPy):
             #print("heyo")
@@ -145,7 +145,7 @@ if __name__ == "__main__":
                 bestScore = min(matchScoreList)
                 bestMatchIndex = matchScoreList.index(bestScore)
                 
-                print(peopleX[i]["name"],"'s"," best match is " , bestMatchName)
+                print(peopleX[0]["name"],"'s"," best match is " , bestMatchName)
                 print("My match score with", bestMatchName, " is ", matchScoreList[bestMatchIndex])
                 outputMatches = {"name" : peopleX[i]["name"], "score" : matchScoreList[bestMatchIndex],
                                  "partner" : bestMatchName}
@@ -179,7 +179,7 @@ if __name__ == "__main__":
                 #print("Length of PeopleY = ",len(peopleY))
                 #print("Length of i = ",i)
                 #print("Length of colCounter = ",colCounter)
-                if(peopleX[i]["email"] == peopleY[colCounter]["email"]):
+                if(peopleX[0]["email"] == peopleY[colCounter]["email"]):
                     
                     notSame = 0
                     #print("Person X Name ",peopleX[i]["name"])
@@ -200,9 +200,9 @@ if __name__ == "__main__":
                 if(notSame == 1): 
                     print(peopleY[colCounter]["name"]," is a potential match\n")
                     #print(colCounter)
-                    q1ScorePx = peopleX[i]["q1"]
-                    q2ScorePx = peopleX[i]["q2"]
-                    q3ScorePx = peopleX[i]["q3"]
+                    q1ScorePx = peopleX[0]["q1"]
+                    q2ScorePx = peopleX[0]["q2"]
+                    q3ScorePx = peopleX[0]["q3"]
                     
                     q1ScorePy = peopleY[colCounter]["q1"]
                     q2ScorePy = peopleY[colCounter]["q2"]
@@ -261,7 +261,7 @@ if __name__ == "__main__":
                   " and this is the match person being tested" ,peopleY[colCounter]["name"])
             colCounter = colCounter + 1
             #print("i have looped ",colCounter," times")
-            print("My name is ", peopleX[i]["name"], "my match score is "
+            print("My name is ", peopleX[0]["name"], "my match score is "
                   , matchScore, "and my current testing partner's name is",bestMatchName)
             #print(lenPy)
             #print(colCounter)
@@ -273,9 +273,9 @@ if __name__ == "__main__":
         #print("i have ran" + str(colCounter) + " Y people")
         #print(peopleX)
         bestMatchName = bestMatchList[bestMatchIndex]
-        print(peopleX[i]["name"],"'s"," best match is " , bestMatchName)
+        print(peopleX[0]["name"],"'s"," best match is " , bestMatchName)
         print("My match score with", bestMatchName, " is ", matchScoreList[bestMatchIndex])
-        outputMatches = {"name" : peopleX[i]["name"], "score" : matchScoreList[bestMatchIndex],
+        outputMatches = {"name" : peopleX[0]["name"], "score" : matchScoreList[bestMatchIndex],
                          "partner" : bestMatchName}
         outputMatchesList.append(outputMatches)
         #print(peopleX[i])
