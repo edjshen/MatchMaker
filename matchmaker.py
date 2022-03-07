@@ -355,7 +355,8 @@ if __name__ == "__main__":
             print(colCounter)
         #print("I IS ITERATING AHHHHHHHHHHHHHHHHHHHHHHHH")
         #holder = peopleX.pop(i)
-        print(peopleX[i])
+        print(peopleX[i]["name"],"'s"," best match is " , bestMatchName)
+        #print(peopleX[i])
         i = i + 1
         #Clear Variables for next iteration of PersonX
         #colCounter = 0
