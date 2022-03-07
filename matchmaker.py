@@ -189,6 +189,8 @@ if __name__ == "__main__":
     bestMatchList = []
     bestScoreList = []
     colCounter = 0
+    outputMatches = {}
+    outputMatchesList =[]
     
     #load in data file
     people = loadCSV() 
@@ -302,12 +304,12 @@ if __name__ == "__main__":
                     totalPy = q1ScorePy + q2ScorePy + q3ScorePy
                     #print(peopleX[i])
                     #print(peopleY[colCounter])
-                    print(totalPx)
-                    print(totalPy)
+                    #print(totalPx)
+                    #print(totalPy)
                     
                     matchScore = abs(totalPx - totalPy)
                     matchScoreList.append(matchScore)
-                    #print(matchScore)
+                    
                     
                         
             
@@ -318,12 +320,12 @@ if __name__ == "__main__":
                     #print("Length of i = ",i)
                     #print("Length of colCounter = ",colCounter)
             
-                    bestScore = max(matchScoreList)
-                    bestScoreList.append(bestScore)
-                    bestMatchIndex = matchScoreList.index(bestScore)
+                    #bestScore = max(matchScoreList)
+                    #bestScoreList.append(bestScore)
+                    #bestMatchIndex = matchScoreList.index(bestScore)
                     #print("i have ran" + str(colCounter) + " Y people")
                     #print(peopleX)
-                    bestMatchName = peopleX[bestMatchIndex]
+                    bestMatchName = peopleX[colCounter]["name"]
                     bestMatchList.append(bestMatchName)
                     
                     #print(peopleX)
@@ -349,15 +351,28 @@ if __name__ == "__main__":
                     #print(peopleX)
                     #print(peopleX[i]["name"])
                     #print(peopleY[colCounter]["name"])
-            
+                
+            print("This is column counter: ", str(colCounter),
+                  " and this is the match person being tested" ,peopleY[colCounter]["name"])
             colCounter = colCounter + 1
-            print("i have looped ",colCounter," times")
+            #print("i have looped ",colCounter," times")
+            print("My name is ", peopleX[i]["name"], "my match score is "
+                  , matchScore, "and my current testing partner's name is",bestMatchName)
             #print(lenPy)
             #print(colCounter)
         #print("I IS ITERATING AHHHHHHHHHHHHHHHHHHHHHHHH")
         #holder = peopleX.pop(i)
-        print(bestScoreList)
-        print(peopleX[i]["name"],"'s"," best match is " , bestMatchList[i])
+        #print(bestScoreList)
+        bestScore = min(matchScoreList)
+        bestMatchIndex = matchScoreList.index(bestScore)
+        #print("i have ran" + str(colCounter) + " Y people")
+        #print(peopleX)
+        bestMatchName = bestMatchList[bestMatchIndex]
+        print(peopleX[i]["name"],"'s"," best match is " , bestMatchName)
+        print("My match score with", bestMatchName, " is ", matchScoreList[bestMatchIndex])
+        outputMatches = {"name" : peopleX[i]["name"], "score" : matchScoreList[bestMatchIndex],
+                         "partner" : bestMatchName}
+        outputMatchesList.append(outputMatches)
         #print(peopleX[i])
         i = i + 1
         #Clear Variables for next iteration of PersonX
@@ -371,12 +386,19 @@ if __name__ == "__main__":
         bestMatchName = 0
         holder = 0
         bestScoreList =[]
+        bestMatchList=[]
 
         
     
     #Output
-    #print(bestMatchList)
-    #print(bestScoreList)
+    counterV = 0
+    
+    while(counterV < len(outputMatchesList)):
+        print("Name: ", outputMatchesList[counterV]["name"])
+        print("Partner Name: ", outputMatchesList[counterV]["partner"])
+        print("Score: ", outputMatchesList[counterV]["score"])
+        print("--------------------------")
+        counterV = counterV + 1
             
     
     
