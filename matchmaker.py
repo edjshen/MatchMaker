@@ -402,9 +402,9 @@ if __name__ == "__main__":
         
         peopleY.pop(bestMatchIndex)
         peopleX.pop(0)
-        print(peopleX)
+        #print(peopleX)
         
-    
+    print(peopleX)
     #calculating match percentage
     maxPerc = 30.00
     counterP = 0
