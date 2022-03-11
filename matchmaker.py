@@ -14,8 +14,14 @@ import pandas as pd
 from pandas import read_csv
 from pandas import DataFrame
 
+fileX = 0
+fileY = 0
+file = 0
+
 def loadCSV():
-    file = os.path.join(os.path.dirname(__file__), "data","data - Form Responses 1.csv")    
+    global file
+    #file = os.path.join(os.path.dirname(__file__), "data","data - Form Responses 1.csv")  
+    file = input("Enter CSV file\n")
     global people
     global lenP
     people = read_csv(file)
@@ -61,10 +67,10 @@ def isEmpty(lis1):
     else:
         return 1
 
-def alg():   
+def alg(peopleX,peopleY):   
     #declare variables
-    peopleX = []
-    peopleY = []
+    #peopleX = []
+    #peopleY = []
     lenPX = 0
     lenPY = 0
     i = 0
@@ -88,14 +94,16 @@ def alg():
     outputMatchesList =[]
     
     #load in data file
-    people = loadCSV() 
+    #people = loadCSV() 
     #initial assignments to variables
-    peopleX = people
-    peopleY = people
+    #peopleX = people
+    #peopleY = people
     lenPx = len(peopleX)
     lenPy = len(peopleY)
     lenP = len(people)
-    
+    #print(people)
+    #print(lenPx,lenPy,lenP)
+    #print(peopleX)
     
     holdNames = []
     heldName = ""
@@ -110,9 +118,9 @@ def alg():
     
     #Looping through Person X (rows)
     while(isEmpty(peopleX)):
-        print("This is i ", i)
-        print(peopleX)
-        print("I am finding the perfect match for",peopleX[0]["name"])
+        #print("This is i ", i)
+        #print(peopleX)
+        #print("I am finding the perfect match for",peopleX[0]["name"])
         #Looping through all Person Ys (Columns)
         while(colCounter < lenPy):
             #print("heyo")
@@ -120,8 +128,8 @@ def alg():
             #lenPy = len(peopleY)
             #print("this is lenPy",lenPy)
             #make special case for last two people
-            if(lenPy < 2):
-                print("We're on our last possible candidate!\n")
+            if(lenPy <= 2):
+                #print("We're on our last possible candidate!\n")
                 #print(peopleX)
                 
                 q1ScorePx = peopleX[0]["q1"]
@@ -148,21 +156,19 @@ def alg():
                 bestScoreList.append(bestScore)
                 """
                 
-                bestScore = min(matchScoreList)
-                bestMatchIndex = matchScoreList.index(bestScore)
+            
                 
-                print(peopleX[0]["name"],"'s"," best match is " , bestMatchName)
-                print("My match score with", bestMatchName, " is ", matchScoreList[bestMatchIndex])
-                outputMatches = {"name" : peopleX[i]["name"], "score" : matchScoreList[bestMatchIndex],
-                                 "partner" : bestMatchName}
-                outputMatchesList.append(outputMatches)
+                #print(peopleX[0]["name"],"'s"," best match is " , bestMatchName)
+                #print("My match score with", bestMatchName, " is ", matchScoreList[bestMatchIndex])
+                bestMatchName = peopleX[colCounter]["name"]
+                bestMatchList.append(bestMatchName)
 
                 #peopleY.pop(matchScoreList[bestMatchIndex])
-                print("I AM RUNINGDKADLFJADLKFJAD;FJDA;KLJFKLADSF")
+                #print("I AM RUNINGDKADLFJADLKFJAD;FJDA;KLJFKLADSF")
                 
                 
             else:
-                print("There is more than 1 person left to check\n")
+                #print("There is more than 1 person left to check\n")
                 #print(peopleX)
                 #print("i am running")
                 lenPx = len(peopleX)
@@ -204,7 +210,7 @@ def alg():
                     #print("Person Y Name ", peopleY[colCounter]["name"])
                 
                 if(notSame == 1): 
-                    print(peopleY[colCounter]["name"]," is a potential match\n")
+                    #print(peopleY[colCounter]["name"]," is a potential match\n")
                     #print(colCounter)
                     q1ScorePx = peopleX[0]["q1"]
                     q2ScorePx = peopleX[0]["q2"]
@@ -236,7 +242,8 @@ def alg():
                     #bestMatchIndex = matchScoreList.index(bestScore)
                     #print("i have ran" + str(colCounter) + " Y people")
                     #print(peopleX)
-                    bestMatchName = peopleX[colCounter]["name"]
+                    #print(colCounter)
+                    bestMatchName = people[colCounter]["name"]
                     bestMatchList.append(bestMatchName)
                     
                     #print(peopleX)
@@ -249,8 +256,9 @@ def alg():
                     lenPx = len(peopleX)
                     lenPy = len(peopleY)
                 else:
+                    pass
                     #print(peopleX)
-                    print("You can't match with yourself\n")
+                    #print("You can't match with yourself\n")
                     #print("i am people",people)
                     #holder = peopleY[colCounter]
                     #print(holder)
@@ -263,15 +271,14 @@ def alg():
                     #print(peopleX[i]["name"])
                     #print(peopleY[colCounter]["name"])
                 
-            print("This is column counter: ", str(colCounter),
-                  " and this is the match person being tested" ,peopleY[colCounter]["name"])
+            #print("This is column counter: ", str(colCounter),
+            #      " and this is the match person being tested" ,peopleY[colCounter]["name"])
             colCounter = colCounter + 1
             #print("i have looped ",colCounter," times")
-            print("My name is ", peopleX[0]["name"], "my match score is "
-                  , matchScore, "and my current testing partner's name is",bestMatchName)
+            #print("My name is ", peopleX[0]["name"], "my match score is "
+            #     , matchScore, "and my current testing partner's name is",bestMatchName)
             #print(lenPy)
             #print(colCounter)
-        #print("I IS ITERATING AHHHHHHHHHHHHHHHHHHHHHHHH")
         #holder = peopleX.pop(i)
         #print(bestScoreList)
         bestScore = min(matchScoreList)
@@ -279,8 +286,8 @@ def alg():
         #print("i have ran" + str(colCounter) + " Y people")
         #print(peopleX)
         bestMatchName = bestMatchList[bestMatchIndex]
-        print(peopleX[0]["name"],"'s"," best match is " , bestMatchName)
-        print("My match score with", bestMatchName, " is ", matchScoreList[bestMatchIndex])
+        #print(peopleX[0]["name"],"'s"," best match is " , bestMatchName)
+        #print("My match score with", bestMatchName, " is ", matchScoreList[bestMatchIndex])
         outputMatches = {"name" : peopleX[0]["name"], "score" : matchScoreList[bestMatchIndex],
                          "partner" : bestMatchName}
         outputMatchesList.append(outputMatches)
@@ -290,9 +297,22 @@ def alg():
         #colCounter = 0
         
         #peopleX.pop(matchScoreList[bestMatchIndex])
+        #print(peopleY)
+        #print(bestMatchIndex)
+        #print("hey")
+        #print(peopleY)
+        #print(bestMatchIndex)
+        #print(len(peopleY))
         
-        trash = peopleY.pop(bestMatchIndex+1)
-        peopleX.pop(0)
+        #delete match made, need to hammer this out, doesn't work for all cases
+        trashY = peopleY.pop(bestMatchIndex+1)
+        #need line below for friend matching
+        trashX = peopleX.pop(bestMatchIndex+1) 
+        trashX = peopleX.pop(0)
+        #need line below for friend matching
+        trashY = peopleY.pop(0) 
+        
+        #print(trashX)
         colCounter = 0
         matchScoreList = []
         matchScore = 0
@@ -303,12 +323,7 @@ def alg():
         bestScoreList =[]
         bestMatchList=[]
         
-        #delete match made
-        
-        
-        #print(trash, "is trash")
-        
-        #print(peopleX)
+      
         
     #calculating match percentage
     maxPerc = 30.00
@@ -319,24 +334,100 @@ def alg():
         matchPercentList.append(matchPercentage)
         counterP = counterP + 1
     
-    
     #Output
     counterV = 0
     print("OUTPUTS")
     print("--------------------------")
     while(counterV < len(outputMatchesList)):
+        print("Match: ",counterV+1)
         print("Name: ", outputMatchesList[counterV]["name"])
         print("Partner Name: ", outputMatchesList[counterV]["partner"])
         print("Score: ", matchPercentList[counterV],"%")
         print("--------------------------")
-        counterV = counterV + 1
-        
+        counterV = counterV + 1 
  
 if __name__ == "__main__": 
+    """
+    IMPORTANT NOTE! THIS ALGORITHM IS GENDER AND SEXUAL ORIENTATION AGNOSTIC,
+    It is important to clean and sort the data before processing using this algorithm
+    PLUG IN FIRST POPULATION AS PEOPLEX, IE STRAIGHT MEN, THEN THEIR PREFERENCE POOL, STRAIGHT/BI WOMEN
+    """
+    peopleX = loadCSV()
+    fileX = file
+    peopleY = loadCSV()
+    fileY = file
+    alg(peopleX,peopleY)
     
-    alg()
+    """
+    i = 0
+    
+    #alg()
+    romantic = []
+    platonic = []
+    straightM = []
+    straightF = []
+    gayM = []
+    gayF = []
+    BiM = []
+    BiF = []
+    nonBin = []
     people = loadCSV()
-    print(people)
+    
+    #loading different pools for different gender/sexual orientation
+    while(i<len(people)):
+        #split into romantic and platonic
+        #print(people[i]["pref"])
+        if(people[i]["pref"] == "R"):   
+            romantic.append(people[i])
+        else:
+            platonic.append(people[i])
+        i = i+1
+                     
+    i = 0
+    while(i<len(romantic)):
+        #different sexual orientation sorting
+        #print(romantic)
+        print(i)
+        if(romantic[i]["gender"] == "M" and romantic[i]["orientation"] == "S"):
+            #Straight Men
+            print("added")
+            straightM.append(romantic[i])
+
+        elif(romantic[i]["gender"] == "M" and romantic[i]["orientation"] == "G"):
+            #Gay Men
+            gayM.append(romantic[i])
+
+        elif(romantic[i]["gender"] == "F" and romantic[i]["orientation"] == "S"):
+            #Straight Women
+            straightF.append(romantic[i])
+
+        elif(romantic[i]["gender"] == "F" and romantic[i]["orientation"] == "G"):
+            #Gay Women
+            gayF.append(romantic[i])
+       
+        elif(romantic[i]["gender"] == "M" and romantic[i]["orientation"] == "B"):
+            #Bi Men
+            BiM.append(romantic[i])
+
+        elif(romantic[i]["gender"] == "F" and romantic[i]["orientation"] == "B"):
+            #Bi Women
+            BiF.append(romantic[i])
+
+        elif(romantic[i]["gender"] == "X" and romantic[i]["orientation"] == "X"):
+            #Non-binary
+            nonBin.append(romantic[i])
+        
+        i = i+1
+    print(straightM)
+    #alg(straightM,straightF)
+    #alg(gayM,gayM)
+    #alg(gayF,gayF)
+    #alg(BiM,gayM)
+    #alg(platonic,platonic)
+
+    """
+            
+    
     
     
     

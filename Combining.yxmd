@@ -1,0 +1,637 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="486" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight men.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>straight men.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="name" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="email" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="pref" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="gender" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="orientation" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="q1" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight men.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="q2" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight men.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="q3" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight men.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="654" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay men.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>gay men.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="name" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="email" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="pref" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="gender" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="orientation" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="q1" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay men.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="q2" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay men.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="q3" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay men.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="726" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi men.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>bi men.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="name" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="email" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="pref" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="gender" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="orientation" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi men.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="q1" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi men.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="q2" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi men.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="q3" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi men.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="-6" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight women.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>straight women.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="name" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="email" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="pref" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="gender" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="orientation" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="q1" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight women.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="q2" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight women.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="q3" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\straight women.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="174" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay women.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>gay women.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="name" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="email" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="pref" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="gender" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="orientation" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="q1" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay women.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="q2" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay women.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="q3" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\gay women.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="318" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi women.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>bi women.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="name" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="email" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="pref" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="gender" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="orientation" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi women.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="q1" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi women.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="q2" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi women.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="q3" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\bi women.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="-6" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\Runs\Run1.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Run1.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="54" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="150" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="270" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="378" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="486" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="642" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="150" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\Runs\Run2.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Run2.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="270" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\Runs\Run3.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Run3.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="378" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\Runs\Run4.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Run4.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="486" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\Runs\Run5.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Run5.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="642" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\AASA-MatchMaker\Runs\Run6.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Run6.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Vertical</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Combining</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6df7efd9-0bc6-48b8-8912-6602fed37ce7" />
+      <Telemetry>
+        <PreviousWorkflowId value="60715a85-a862-4fa8-b04c-f7d856d474a6" />
+        <OriginWorkflowId value="60715a85-a862-4fa8-b04c-f7d856d474a6" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

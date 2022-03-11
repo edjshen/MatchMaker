@@ -1,0 +1,20 @@
+Bi Men - Straight Women + Gay Men + Bi Women + Bi Men || Run1
+
+Bi Women - Straight Men + Gay Women + Bi Women + Bi Men || Run2
+
+-----------------------------------------------------------
+
+Straight Men - Straight Women + Bi Women || Run3
+
+Straight Women - Straight Men + Bi Men || Run4
+
+Gay Men - Gay Men + Bi Men || Run5
+
+Gay Women - Gay Women + Bi Women || Run6
+
+Non Binary - Non Binary + X* || Run7
+
+ask maggie if this algorithm run sequence makes sense
+
+
+
