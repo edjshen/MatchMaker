@@ -1,4 +1,2 @@
-the algorithm is biased towards those who are closer to the beginning of the data file.
-however, this isn't significant since it considers the highest match percentage against 
-all MPS for each given candidate, so the bias more or less functions as a way to break
-ties for hypothetical love triangles
+- algorithm is order dependent
+- 

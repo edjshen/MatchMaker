@@ -208,7 +208,7 @@ def alg(peopleX,peopleY):
                     #print(peopleY)
                     #print(colCounter)
                     #print("Person Y Name ", peopleY[colCounter]["name"])
-                
+                #sum up all question scores
                 if(notSame == 1): 
                     #print(peopleY[colCounter]["name"]," is a potential match\n")
                     #print(colCounter)
