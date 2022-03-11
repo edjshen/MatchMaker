@@ -1,4 +1,4 @@
-# AASA MatchMaker
+# MatchMaker
  
 This matching program utilizes algebraic difference calculations to determine which entries are most
 similar.
