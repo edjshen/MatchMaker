@@ -14,18 +14,22 @@ import pandas as pd
 from pandas import read_csv
 from pandas import DataFrame
 
+people_length = 0
+
 fileX = 0
 fileY = 0
 file = 0
 
 def loadCSV():
     global file
+    global people_length
     #file = os.path.join(os.path.dirname(__file__), "data","data - Form Responses 1.csv")  
     file = input("Enter CSV file\n")
     global people
     global lenP
     people = read_csv(file)
-    people = people.to_dict('records')
+    people_length = len(people.columns)
+    people = people.to_dict('records')  
     print("Data file Successfully Loaded")
     #print(products)
     #print(products_csv)
@@ -591,9 +595,9 @@ def alg(peopleX,peopleY):
         bestMatchList=[]
         
       
-        
+    global people_length
     #calculating match percentage
-    maxPerc = 30.00
+    maxPerc = (people_length*10) - 3
     counterP = 0
     matchPercentList = []
     while(counterP < len(outputMatchesList)):     
