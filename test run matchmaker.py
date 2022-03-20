@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Feb 27 17:36:31 2022
+Created on Sun Mar 20 16:31:49 2022
 
-@author: ejs et al
+@author: edjsh
 """
+
 from datetime import datetime
 import os
 from dotenv import load_dotenv
@@ -31,6 +32,7 @@ def loadCSV():
     #print(products_csv)
     #lenP = len(people)
     #print(people)
+    print(people)
     return people
         
 
@@ -142,35 +144,7 @@ def alg(peopleX,peopleY):
                 q8ScorePx = peopleX[0]["q8"]
                 q9ScorePx = peopleX[0]["q9"]
                 q10ScorePx = peopleX[0]["q10"]
-                q11ScorePx = peopleX[0]["q11"]
-                q12ScorePx = peopleX[0]["q12"]
-                q13ScorePx = peopleX[0]["q13"]
-                q14ScorePx = peopleX[0]["q14"]
-                q15ScorePx = peopleX[0]["q15"]
-                q16ScorePx = peopleX[0]["q16"]
-                q17ScorePx = peopleX[0]["q17"]
-                q18ScorePx = peopleX[0]["q18"]
-                q19ScorePx = peopleX[0]["q19"]
-                q20ScorePx = peopleX[0]["q20"]
-                q21ScorePx = peopleX[0]["q21"]
-                q22ScorePx = peopleX[0]["q22"]
-                q23ScorePx = peopleX[0]["q23"]
-                q24ScorePx = peopleX[0]["q24"]
-                q25ScorePx = peopleX[0]["q25"]
-                q26ScorePx = peopleX[0]["q26"]
-                q27ScorePx = peopleX[0]["q27"]
-                q28ScorePx = peopleX[0]["q28"]
-                q29ScorePx = peopleX[0]["q29"]
-                q30ScorePx = peopleX[0]["q30"]
-                q31ScorePx = peopleX[0]["q31"]
-                q32ScorePx = peopleX[0]["q32"]
-                q33ScorePx = peopleX[0]["q33"]
-                q34ScorePx = peopleX[0]["q34"]
-     
-                
-                
-                
-                
+
                 #print(peopleY)
                 
                 q1ScorePy = peopleY[1]["q1"]
@@ -183,65 +157,15 @@ def alg(peopleX,peopleY):
                 q8ScorePy = peopleY[1]["q8"]
                 q9ScorePy = peopleY[1]["q9"]
                 q10ScorePy = peopleY[1]["q10"]
-                q11ScorePy = peopleY[1]["q11"]
-                q12ScorePy = peopleY[1]["q12"]
-                q13ScorePy = peopleY[1]["q13"]
-                q14ScorePy = peopleY[1]["q14"]
-                q15ScorePy = peopleY[1]["q15"]
-                q16ScorePy = peopleY[1]["q16"]
-                q17ScorePy = peopleY[1]["q17"]
-                q18ScorePy = peopleY[1]["q18"]
-                q19ScorePy = peopleY[1]["q19"]
-                q20ScorePy = peopleY[1]["q20"]
-                q21ScorePy = peopleY[1]["q21"]
-                q22ScorePy = peopleY[1]["q22"]
-                q23ScorePy = peopleY[1]["q23"]
-                q24ScorePy = peopleY[1]["q24"]
-                q25ScorePy = peopleY[1]["q25"]
-                q26ScorePy = peopleY[1]["q26"]
-                q27ScorePy = peopleY[1]["q27"]
-                q28ScorePy = peopleY[1]["q28"]
-                q29ScorePy = peopleY[1]["q29"]
-                q30ScorePy = peopleY[1]["q30"]
-                q31ScorePy = peopleY[1]["q31"]
-                q32ScorePy = peopleY[1]["q32"]
-                q33ScorePy = peopleY[1]["q33"]
-                q34ScorePy = peopleY[1]["q34"]
+               
                 
-                totalPx = (q1ScorePx+
-                q2ScorePx+
-                q3ScorePx+
-                q4ScorePx+
+                totalPx =  (q1ScorePx + q2ScorePx + q3ScorePx+ q4ScorePx+
                 q5ScorePx+
                 q6ScorePx+
                 q7ScorePx+
                 q8ScorePx+
                 q9ScorePx+
-                q10ScorePx+
-                q11ScorePx+
-                q12ScorePx+
-                q13ScorePx+
-                q14ScorePx+
-                q15ScorePx+
-                q16ScorePx+
-                q17ScorePx+
-                q18ScorePx+
-                q19ScorePx+
-                q20ScorePx+
-                q21ScorePx+
-                q22ScorePx+
-                q23ScorePx+
-                q24ScorePx+
-                q25ScorePx+
-                q26ScorePx+
-                q27ScorePx+
-                q28ScorePx+
-                q29ScorePx+
-                q30ScorePx+
-                q31ScorePx+
-                q32ScorePx+
-                q33ScorePx+
-                q34ScorePx
+                q10ScorePx
                 )
                 
                 
@@ -254,31 +178,7 @@ def alg(peopleX,peopleY):
                 q7ScorePy+
                 q8ScorePy+
                 q9ScorePy+
-                q10ScorePy+
-                q11ScorePy+
-                q12ScorePy+
-                q13ScorePy+
-                q14ScorePy+
-                q15ScorePy+
-                q16ScorePy+
-                q17ScorePy+
-                q18ScorePy+
-                q19ScorePy+
-                q20ScorePy+
-                q21ScorePy+
-                q22ScorePy+
-                q23ScorePy+
-                q24ScorePy+
-                q25ScorePy+
-                q26ScorePy+
-                q27ScorePy+
-                q28ScorePy+
-                q29ScorePy+
-                q30ScorePy+
-                q31ScorePy+
-                q32ScorePy+
-                q33ScorePy+
-                q34ScorePy
+                q10ScorePy
                 )
                 
                 matchScore = abs(totalPx - totalPy)
@@ -357,30 +257,6 @@ def alg(peopleX,peopleY):
                     q8ScorePx = peopleX[0]["q8"]
                     q9ScorePx = peopleX[0]["q9"]
                     q10ScorePx = peopleX[0]["q10"]
-                    q11ScorePx = peopleX[0]["q11"]
-                    q12ScorePx = peopleX[0]["q12"]
-                    q13ScorePx = peopleX[0]["q13"]
-                    q14ScorePx = peopleX[0]["q14"]
-                    q15ScorePx = peopleX[0]["q15"]
-                    q16ScorePx = peopleX[0]["q16"]
-                    q17ScorePx = peopleX[0]["q17"]
-                    q18ScorePx = peopleX[0]["q18"]
-                    q19ScorePx = peopleX[0]["q19"]
-                    q20ScorePx = peopleX[0]["q20"]
-                    q21ScorePx = peopleX[0]["q21"]
-                    q22ScorePx = peopleX[0]["q22"]
-                    q23ScorePx = peopleX[0]["q23"]
-                    q24ScorePx = peopleX[0]["q24"]
-                    q25ScorePx = peopleX[0]["q25"]
-                    q26ScorePx = peopleX[0]["q26"]
-                    q27ScorePx = peopleX[0]["q27"]
-                    q28ScorePx = peopleX[0]["q28"]
-                    q29ScorePx = peopleX[0]["q29"]
-                    q30ScorePx = peopleX[0]["q30"]
-                    q31ScorePx = peopleX[0]["q31"]
-                    q32ScorePx = peopleX[0]["q32"]
-                    q33ScorePx = peopleX[0]["q33"]
-                    q34ScorePx = peopleX[0]["q34"]
                     
                     q1ScorePy = peopleY[colCounter]["q1"]
                     q2ScorePy = peopleY[colCounter]["q2"]
@@ -392,33 +268,10 @@ def alg(peopleX,peopleY):
                     q8ScorePy = peopleY[colCounter]["q8"]
                     q9ScorePy = peopleY[colCounter]["q9"]
                     q10ScorePy = peopleY[colCounter]["q10"]
-                    q11ScorePy = peopleY[colCounter]["q11"]
-                    q12ScorePy = peopleY[colCounter]["q12"]
-                    q13ScorePy = peopleY[colCounter]["q13"]
-                    q14ScorePy = peopleY[colCounter]["q14"]
-                    q15ScorePy = peopleY[colCounter]["q15"]
-                    q16ScorePy = peopleY[colCounter]["q16"]
-                    q17ScorePy = peopleY[colCounter]["q17"]
-                    q18ScorePy = peopleY[colCounter]["q18"]
-                    q19ScorePy = peopleY[colCounter]["q19"]
-                    q20ScorePy = peopleY[colCounter]["q20"]
-                    q21ScorePy = peopleY[colCounter]["q21"]
-                    q22ScorePy = peopleY[colCounter]["q22"]
-                    q23ScorePy = peopleY[colCounter]["q23"]
-                    q24ScorePy = peopleY[colCounter]["q24"]
-                    q25ScorePy = peopleY[colCounter]["q25"]
-                    q26ScorePy = peopleY[colCounter]["q26"]
-                    q27ScorePy = peopleY[colCounter]["q27"]
-                    q28ScorePy = peopleY[colCounter]["q28"]
-                    q29ScorePy = peopleY[colCounter]["q29"]
-                    q30ScorePy = peopleY[colCounter]["q30"]
-                    q31ScorePy = peopleY[colCounter]["q31"]
-                    q32ScorePy = peopleY[colCounter]["q32"]
-                    q33ScorePy = peopleY[colCounter]["q33"]
-                    q34ScorePy = peopleY[colCounter]["q34"]
                     
-                    totalPx = (q1ScorePx+
-                    q2ScorePx+
+                    
+                    totalPx = (q1ScorePx +
+                    q2ScorePx +
                     q3ScorePx+
                     q4ScorePx+
                     q5ScorePx+
@@ -426,31 +279,7 @@ def alg(peopleX,peopleY):
                     q7ScorePx+
                     q8ScorePx+
                     q9ScorePx+
-                    q10ScorePx+
-                    q11ScorePx+
-                    q12ScorePx+
-                    q13ScorePx+
-                    q14ScorePx+
-                    q15ScorePx+
-                    q16ScorePx+
-                    q17ScorePx+
-                    q18ScorePx+
-                    q19ScorePx+
-                    q20ScorePx+
-                    q21ScorePx+
-                    q22ScorePx+
-                    q23ScorePx+
-                    q24ScorePx+
-                    q25ScorePx+
-                    q26ScorePx+
-                    q27ScorePx+
-                    q28ScorePx+
-                    q29ScorePx+
-                    q30ScorePx+
-                    q31ScorePx+
-                    q32ScorePx+
-                    q33ScorePx+
-                    q34ScorePx
+                    q10ScorePx
                     )
                     
                     
@@ -463,31 +292,7 @@ def alg(peopleX,peopleY):
                     q7ScorePy+
                     q8ScorePy+
                     q9ScorePy+
-                    q10ScorePy+
-                    q11ScorePy+
-                    q12ScorePy+
-                    q13ScorePy+
-                    q14ScorePy+
-                    q15ScorePy+
-                    q16ScorePy+
-                    q17ScorePy+
-                    q18ScorePy+
-                    q19ScorePy+
-                    q20ScorePy+
-                    q21ScorePy+
-                    q22ScorePy+
-                    q23ScorePy+
-                    q24ScorePy+
-                    q25ScorePy+
-                    q26ScorePy+
-                    q27ScorePy+
-                    q28ScorePy+
-                    q29ScorePy+
-                    q30ScorePy+
-                    q31ScorePy+
-                    q32ScorePy+
-                    q33ScorePy+
-                    q34ScorePy
+                    q10ScorePy
                     )
                     #print(peopleX[i])
                     #print(peopleY[colCounter])
@@ -609,8 +414,7 @@ def alg(peopleX,peopleY):
         print("Match: ",counterV+1)
         print("Name: ", outputMatchesList[counterV]["name"])
         print("Partner Name: ", outputMatchesList[counterV]["partner"])
-        print("Score: ", outputMatchesList[counterV]["score"])
-        print("Match Percent: ", matchPercentList[counterV],"%")
+        print("Score: ", matchPercentList[counterV],"%")
         print("--------------------------")
         counterV = counterV + 1 
  
