@@ -1,6 +1,0 @@
--match bi men first
-	remove matches using alteryx
-		rerun
-		
--adding support for more questions
--add csv output function for alg

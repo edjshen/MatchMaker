@@ -1,59 +1,91 @@
-﻿name,email,pref,gender,orientation,q1,q2,q3
-Keven,kyz6@georgetown.edu,F,X,G,6.273704939,7.690164674,9.999476984
-Lucas,lll50@georgetown.edu,F,M,G,3.460725924,0.287805001,7.741672102
-Ed,js4759@georgetown.edu,F,F,G,10,10,10
-Lauren,lr50,F,F,G,4.363903476,2.354172497,3.564250746
-Taylor,ui568,F,M,S,3.036932932,5.058721652,2.15182456
-Jake,bhrn474,F,X,B,3.329521616,7.475486273,4.703300788
-Brianna,bhrn476,F,X,G,4.710758965,9.963697976,6.088655829
-Dylan,bhrn478,F,X,B,1.735402301,5.416484337,5.305691841
-Maggie,bhrn482,F,X,B,10,10,10
-Linh,bhrn484,F,F,G,8.103300869,2.269843886,7.004118706
-Banana,bhrn486,F,X,G,8.604392997,0.597643028,0.74725317
-Griffin Saunders,bhrn488,F,F,G,9.221588847,7.389234984,3.023018496
-Jefferson Simpson,bhrn491,F,F,S,8.481872999,9.267160103,8.575717073
-Kenley Lang,bhrn492,F,M,G,8.660584704,8.292230746,3.964742607
-Triston Houston,bhrn495,F,M,S,4.942710406,8.328739506,8.494685228
-Francisco Ramsey,bhrn496,F,X,S,8.847767434,2.465142516,2.578593197
-Anton Dorsey,bhrn499,F,X,B,4.321634236,9.319731067,8.304609049
-Mara Freeman,bhrn500,F,F,B,6.162012265,4.934461997,7.733815564
-Issac Hughes,bhrn502,F,X,S,6.401700594,8.177436118,0.094194465
-Evangeline Lloyd,bhrn503,F,F,G,5.952279233,6.028626135,6.116530505
-Nadia Crane,bhrn510,F,M,S,9.685197946,2.790618745,9.151172979
-Sawyer Wells,bhrn511,F,X,G,7.930539525,8.313566277,9.107679931
-Gretchen Stein,bhrn514,F,X,B,6.820713225,5.270588236,3.104533354
-Clara Cardenas,bhrn515,F,F,G,2.401583443,8.982361072,5.689154731
-Kathleen Proctor,bhrn516,F,F,S,4.248659954,7.881787797,1.963334274
-Selina Dickerson,bhrn517,F,X,B,6.625599762,1.314266517,3.021490512
-Allen Hayden,bhrn518,F,M,S,8.986430254,3.421750762,5.128434776
-Lydia Blackburn,bhrn521,F,X,G,4.313818974,7.368228146,4.324298859
-Zayden Bryan,bhrn523,F,F,B,8.487278718,1.156978502,6.302398626
-Nathaly Conway,bhrn526,F,M,B,9.271454856,4.402099319,5.609623422
-Issac Carrillo,bhrn527,F,M,G,9.874300357,1.161313715,5.163911194
-Alena Cobb,bhrn529,F,X,G,8.617178377,6.535995085,4.134182747
-Kiersten Gould,bhrn532,F,M,S,1.092352316,7.662138267,6.512231668
-Izabelle Pacheco,bhrn536,F,X,G,2.290850185,8.762792014,4.001206324
-Noel Burton,bhrn538,F,M,S,4.356210382,9.079785346,7.835973262
-Broderick Mooney,bhrn541,F,X,G,9.082464272,6.808315796,3.463872417
-Anabelle Watkins,bhrn546,F,M,G,4.759203874,2.909536427,7.458845923
-Raelynn Camacho,bhrn547,F,X,B,8.166052779,6.496608994,4.034165913
-Branson Stanton,bhrn548,F,F,B,3.231142277,3.547961002,8.232678867
-Kamryn Barnes,bhrn550,F,F,S,3.436412772,2.356628189,1.695217287
-Jazlene Bowen,bhrn552,F,M,B,4.684603827,9.996117566,2.310982599
-Myla Jordan,bhrn554,F,X,S,7.196974761,1.548835148,5.334988995
-Tony Knox,bhrn559,F,M,S,1.58421591,8.235958554,6.989615081
-Kenzie Blair,bhrn560,F,X,B,8.873703669,1.245053612,0.266171747
-German Fowler,bhrn561,F,F,B,6.919296653,0.291504619,6.493363867
-Atticus Wiggins,bhrn564,F,X,S,9.897036382,8.055591999,4.348956003
-Raphael Mccullough,bhrn565,F,F,S,6.165023526,6.382025579,0.459487939
-Brynlee Henson,bhrn568,F,F,B,0.917270637,1.207401095,0.422354216
-Jessie Shelton,bhrn569,F,X,G,4.973929585,9.198156637,4.138330093
-Amari Waller,bhrn570,F,F,S,3.241883588,0.055627398,1.869754099
-Jaime Nguyen,bhrn574,F,F,G,1.687270452,7.087270511,7.39969575
-Issac Frost,bhrn575,F,F,B,5.826308332,5.60722347,9.67954744
-Angela Monroe,bhrn576,F,F,S,9.263918165,5.629023157,1.530313082
-Martin Mckee,bhrn579,F,M,S,5.993021764,5.162637764,6.145386134
-Kamryn Robles,bhrn581,F,F,S,9.256451874,4.039995413,9.908313813
-Paige Booker,bhrn582,F,X,G,4.324584805,8.612086228,1.85557853
-Marcelo Monroe,bhrn584,F,F,S,5.145116713,8.18418495,7.233362481
-Antoine Schmidt,bhrn586,F,F,G,2.45993669,2.973412137,2.142057563
+﻿name,email,type,school,year,gender,pref,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20,q21,q22,q23,q24,q25,q26,q27,q28,q29,q30,q31,q32,q33,q34,q35,q36,q37,q38,,,,,,,
+Fornia He,fzh2@georgetown.edu,"Platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2025,1,3,1,1,7,6,5,2,9,7,2,9,1,1,1,2,7,2,4,9,6,8,1,9,9,9,2,1,3,8,9,2,1,1,9,7,6,6,7,2,,,,,,,
+Emi Fugh,Efugh13@gwmail.gwu.edu,"Platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",George Washington University,2025,1,3,6,9,7,7,1,7,8,3,6,7,5,1,2,5,6,5,7,6,1,6,6,4,7,9,9,9,3,7,5,9,1,1,6,9,5,3,2,3,,,,,,,
+Leah Chen,lyc12@georgetown.edu,"Platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2025,1,3,8,9,7,9,3,1,2,7,1,9,3,1,9,9,2,7,4,3,1,4,9,9,3,9,1,1,6,7,9,1,1,1,9,9,4,7,2,7,,,,,,,
+Gene Kim,gk533@georgetown.edu,"Platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2023,1,3,2,6,6,8,7,6,5,2,3,6,7,2,2,6,8,6,2,8,1,3,3,9,9,9,2,1,1,8,7,8,7,2,6,6,7,3,5,5,,,,,,,
+Eimon Aung,eta19@georgetown.edu,"Platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2025,1,3,1,2,7,7,4,6,5,7,3,6,4,2,3,2,8,2,4,5,1,4,3,7,8,7,1,1,1,9,4,1,3,1,4,6,4,4,5,4,,,,,,,
+Ameeta Sihota,aks183@georgetown.edu,"Platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2025,1,3,6,3,9,3,5,3,8,4,3,8,7,2,2,5,2,8,5,4,1,4,7,6,2,8,3,4,2,6,6,7,1,6,6,8,4,5,4,2,,,,,,,
+alan,abc134@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2025,2,1,6,3,9,7,5,6,7,6,8,6,5,3,5,4,4,6,3,5,2,5,2,9,1,9,2,6,4,8,6,9,7,3,8,9,6,6,2,6,,,,,,,
+Katie Wang,Kyw9@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2023,1,2,8,4,7,7,7,7,6,5,3,9,9,4,4,5,3,7,8,3,2,5,7,4,4,7,3,1,7,6,3,3,3,6,6,8,4,2,4,6,,,,,,,
+Bonnie Beiken,bgb40@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2024,1,3,6,4,8,7,3,7,4,6,6,8,3,1,4,7,6,6,5,4,3,5,6,8,7,7,1,1,3,7,4,2,2,4,8,9,7,4,7,4,,,,,,,
+Anaya Mehta,aam349@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2025,1,2,9,2,5,7,6,6,8,8,3,9,2,2,6,5,3,8,8,3,1,4,6,9,7,7,4,1,2,9,3,2,1,8,7,8,4,4,3,7,,,,,,,
+Clara Ma,czm6@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2022,1,2,8,3,7,6,2,3,6,8,1,9,7,3,8,7,3,8,2,7,1,2,8,6,3,3,1,1,4,4,7,1,2,1,8,8,6,2,2,6,,,,,,,
+Catherine Tan,cyt14@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2025,1,1,6,2,8,3,4,5,7,7,3,8,6,3,6,5,5,5,4,7,2,6,7,7,7,8,1,1,6,8,8,1,2,4,6,6,6,6,5,8,,,,,,,
+Alex Yu,ay450@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2024,2,1,3,3,4,8,3,3,8,9,7,8,7,5,8,5,2,8,9,3,8,9,8,9,9,9,3,2,5,7,4,8,5,7,8,9,8,4,3,8,,,,,,,
+Winnie Ho,Wh483@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2025,1,3,6,4,7,6,2,5,5,7,2,9,3,6,3,4,3,6,5,2,1,7,6,6,3,7,3,1,2,8,2,3,5,2,5,6,6,2,6,9,,,,,,,
+greg park,gps43@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2023,2,2,4,6,9,9,2,7,9,3,3,7,4,3,4,2,1,9,8,3,2,5,3,5,1,9,7,3,3,5,3,4,5,2,2,5,5,4,1,2,,,,,,,
+Rosali Gonzalves,rg4004a@student.american.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",American University,2025,3,3,7,6,8,4,1,5,3,1,6,1,6,6,3,1,8,5,7,4,1,5,3,8,2,9,9,9,1,7,3,9,1,1,3,9,5,3,1,1,,,,,,,
+Sresth Viswanathan,sv509@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2024,2,3,7,3,7,7,3,2,4,7,2,8,8,2,9,9,1,9,3,8,1,8,4,8,7,9,1,3,7,9,7,9,8,4,8,9,1,3,7,7,,,,,,,
+Josie Wu,jw1952@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2024,1,3,7,6,8,7,7,8,9,4,6,9,8,2,2,9,3,6,1,2,1,6,9,7,3,8,2,1,3,8,9,2,8,3,7,6,7,7,6,9,,,,,,,
+Alexandra Kim-Lee,akk101@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2024,1,3,8,6,3,2,8,3,3,3,6,7,8,1,4,3,6,4,3,7,2,4,6,8,1,9,1,1,2,3,9,4,3,1,8,9,9,3,2,3,,,,,,,
+MJ Ninal,mrn44@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2024,1,2,7,7,7,6,6,3,8,5,4,8,4,4,6,3,4,6,5,7,2,7,3,8,1,7,3,1,4,8,8,1,7,4,5,7,6,4,7,6,,,,,,,
+Kimberly Nguyen,Kmn66@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2024,1,2,8,7,8,8,6,7,7,1,1,7,9,3,9,9,9,1,2,1,1,8,4,3,3,9,1,4,1,6,8,9,4,7,7,9,1,7,9,9,,,,,,,
+Simran Chaudhry,sc2081@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2025,1,2,6,5,7,5,5,4,7,6,4,5,4,5,6,5,5,5,5,4,3,6,6,8,5,7,4,2,2,6,6,4,5,5,7,9,7,5,5,6,,,,,,,
+Victoria Chiu,cc2024@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2022,1,2,3,1,4,8,4,6,8,4,1,9,5,2,3,8,2,6,5,2,6,7,7,5,4,9,2,1,6,9,9,8,4,3,6,8,9,7,9,7,,,,,,,
+Julian Wang,jcw162@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2024,2,1,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,,,,,,,
+Angela Yu,ay459@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2025,1,3,3,7,9,8,6,4,7,7,1,6,8,3,9,3,6,6,4,7,3,2,6,4,8,7,1,1,3,7,2,2,1,2,7,8,6,4,4,7,,,,,,,
+Carina Daruwala,cd1212@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2025,1,2,6,5,8,7,5,7,6,6,3,9,7,4,5,5,2,6,4,5,1,8,7,8,9,7,3,1,3,6,9,4,7,6,6,5,4,4,7,6,,,,,,,
+Annika Swanson,ams726@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2024,1,3,3,4,6,5,5,6,7,3,6,9,6,3,6,9,4,4,4,6,1,2,4,9,3,9,3,3,3,7,9,6,5,1,7,9,6,3,2,9,,,,,,,
+isabelle chang,idc15@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2025,1,2,7,5,6,7,5,4,5,6,5,8,5,4,3,4,1,7,5,6,1,5,3,5,2,7,3,1,5,7,6,3,3,3,6,5,6,5,5,4,,,,,,,
+Yifan Chen,yc768@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2024,1,3,6,6,5,5,4,8,6,7,2,8,5,8,7,8,7,2,4,4,2,1,7,6,1,9,7,5,1,9,7,7,4,3,7,9,3,5,1,7,,,,,,,
+Andie Harty,amh423@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2024,1,3,6,1,9,3,4,4,9,9,1,5,1,1,8,3,5,7,2,7,1,1,9,9,7,9,1,2,1,7,9,9,1,2,6,9,2,8,1,2,,,,,,,
+Naveena Nanda,nn401@Georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2023,1,3,4,6,5,4,8,1,4,2,5,7,5,6,4,7,6,6,5,5,1,1,8,8,2,5,1,1,2,5,2,5,4,2,5,7,7,6,1,5,,,,,,,
+Isabel Mu,Izm3@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2024,1,3,7,3,4,3,5,7,8,3,3,8,4,2,7,2,1,9,3,7,2,5,6,8,3,9,5,2,3,7,9,8,1,2,6,7,9,8,2,3,,,,,,,
+Maggie Lin,mkl105@georgetown.edu,"Strictly platonic (if you're already in a relationship, or just want to meet some new people/make friends!)",Georgetown University,2023,1,3,4,1,8,8,4,1,7,6,3,6,7,2,4,1,8,6,7,6,1,3,7,9,6,8,4,4,2,9,5,6,2,1,5,9,4,4,4,3,,,,,,,
+Preeti Kota,psk56@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2024,1,2,8,4,5,8,4,5,6,3,4,8,6,3,4,4,3,6,3,4,6,7,5,8,4,8,7,6,4,6,8,7,4,6,7,8,6,6,5,7,,,,,,,
+Bailey Park,bp0802a@student.american.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2024,1,2,9,4,8,1,2,3,7,6,1,7,8,2,9,5,6,1,7,9,1,2,6,9,2,9,1,1,1,7,9,9,1,1,7,5,2,3,1,1,,,,,,,
+Linlee Mangialardi,lnm49@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,3,2,7,8,5,4,6,8,1,8,6,3,7,6,2,7,2,3,1,3,6,8,4,9,1,1,7,3,7,5,5,6,5,8,4,2,3,8,,,,,,,
+Ekki Lu,yl1323@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2024,1,2,3,6,8,8,3,6,7,9,4,6,5,2,7,3,1,7,5,3,3,7,2,5,7,7,1,1,5,6,5,1,1,8,5,6,3,4,5,5,,,,,,,
+Shania Fan,spf43@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2024,1,2,8,8,6,4,3,7,3,6,9,9,8,2,4,9,8,5,4,3,6,9,6,6,6,9,6,9,1,6,9,9,2,3,9,9,7,5,9,6,,,,,,,
+Iris Peng,ip233@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2024,1,2,4,1,9,7,5,7,7,9,4,6,7,3,2,4,3,7,9,5,3,4,8,7,9,5,1,5,3,8,3,7,4,3,4,7,6,4,3,5,,,,,,,
+Alice Lei,al1356@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2022,1,2,9,5,7,5,5,7,7,7,3,8,7,4,7,6,8,2,4,4,3,5,3,8,1,9,6,6,1,6,9,7,1,5,7,9,5,4,5,8,,,,,,,
+Cy Maceda,cm2886@student.american.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2023,1,2,9,5,8,8,3,8,8,7,1,9,4,1,4,4,9,1,5,9,1,6,7,9,7,9,6,1,1,9,9,9,1,6,9,9,1,1,9,9,,,,,,,
+Sophia Epley,Sxe2@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,8,6,7,4,7,8,7,8,6,6,3,4,8,6,8,6,7,6,4,2,8,8,7,6,8,6,2,8,4,6,2,3,5,8,3,4,2,8,,,,,,,
+Naomi,nz5924a@student.american.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2025,1,2,7,6,9,7,3,6,7,7,3,9,9,3,7,7,8,2,7,6,4,8,2,9,7,9,1,7,1,7,7,7,5,6,7,9,5,1,6,9,,,,,,,
+Britney Shaw,bs1081@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2023,1,2,9,7,7,3,5,6,7,3,2,7,3,3,7,6,9,1,3,6,1,4,3,7,3,9,7,1,1,9,7,7,1,2,6,9,7,7,6,9,,,,,,,
+Nadine Leesang,nl4740a@student.american.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2025,1,2,8,4,9,5,4,4,5,2,2,7,7,2,7,1,9,2,5,4,1,2,5,7,1,8,1,2,2,9,7,8,2,1,7,8,3,4,2,4,,,,,,,
+Jazz Jones,jmj286@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,3,2,8,2,5,4,8,6,4,4,6,3,6,2,1,7,3,6,3,5,7,9,4,8,2,1,2,5,8,1,7,4,6,5,4,4,5,6,,,,,,,
+Kelly Ma,xm3812a@student.american.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2025,1,2,4,3,6,3,2,6,7,7,2,9,5,3,5,7,5,4,7,3,1,7,6,9,4,7,4,2,3,7,9,6,2,3,7,5,4,3,5,6,,,,,,,
+Karla,Ke6693a@student.American.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2025,1,2,7,2,7,4,1,8,5,4,5,7,3,5,5,5,5,4,4,5,3,5,6,8,2,3,1,1,1,9,5,3,1,5,6,6,3,5,6,6,,,,,,,
+Brittany Peng,bjp65@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,2,6,9,5,4,5,5,8,6,9,6,2,4,5,2,2,5,1,1,3,7,9,2,8,8,3,1,9,8,8,1,3,6,5,5,4,4,7,,,,,,,
+Jaskeerat Thakral,jkt40@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,7,6,4,6,6,4,6,4,4,9,4,3,6,5,3,6,3,6,1,7,6,8,3,8,3,2,4,7,8,6,7,5,6,6,6,5,7,8,,,,,,,
+Grace Musilli,gm4112a@student.American.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2023,1,2,7,6,9,7,4,1,4,6,4,7,4,3,4,5,4,6,2,6,3,4,6,8,7,9,3,2,1,2,4,8,3,4,6,7,6,4,3,4,,,,,,,
+Maddy Park,mp4135a@student.american.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2024,1,2,4,3,8,7,6,7,7,8,4,9,7,3,6,5,6,5,7,5,1,7,7,8,3,9,6,2,2,9,7,7,4,5,7,9,5,4,6,7,,,,,,,
+Jelina Solomon,Js2826a@american.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2025,1,2,7,2,7,6,6,5,5,5,1,8,3,3,5,4,2,7,5,4,4,5,6,9,6,8,3,1,5,4,8,4,3,6,5,7,4,7,6,7,,,,,,,
+Victoria Tan (Vic),vt3592a@student.american.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2023,1,2,2,7,5,6,9,3,6,9,3,8,1,3,6,6,6,3,7,6,1,6,2,6,8,6,1,1,2,9,3,1,2,4,6,5,7,7,4,7,,,,,,,
+Grace Chen,gc2616a@student.american.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2025,1,2,8,3,8,4,2,7,4,6,4,9,8,2,2,6,6,4,2,6,1,6,6,9,3,9,4,4,1,8,9,9,3,6,7,8,4,3,7,7,,,,,,,
+Aalaya Gurram,ag8241a@student.american.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2025,1,2,5,7,7,8,5,3,5,5,4,8,6,4,5,6,4,7,3,5,2,5,4,7,7,8,3,4,3,7,6,8,5,6,5,7,5,5,4,7,,,,,,,
+Niranun Puapattanakajorn (Nicole),np611@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,6,7,8,3,3,3,7,6,3,7,4,2,4,4,6,4,3,6,2,6,4,8,8,8,2,2,2,6,8,6,1,6,7,7,6,3,5,4,,,,,,,
+Rachel Tao,rft13@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,8,4,9,7,3,4,5,8,4,9,4,6,2,2,6,2,3,6,3,2,7,8,1,8,3,3,1,8,7,6,1,7,6,7,7,2,6,4,,,,,,,
+Autumn Zhou,ajz47@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,3,2,7,5,3,3,6,5,1,6,4,1,7,2,5,7,4,7,1,3,7,7,2,5,1,1,2,2,6,1,1,1,5,5,4,4,3,6,,,,,,,
+Tsetan Namdol,tn8883a@student.american.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2025,1,2,5,5,8,7,6,6,5,7,5,6,6,4,6,7,3,8,6,6,4,5,7,7,6,8,4,4,4,9,6,7,7,7,6,9,7,6,8,7,,,,,,,
+Arielle,hc7773a@student.american.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2023,1,2,9,4,7,6,3,5,8,4,3,8,2,1,3,2,3,6,4,6,2,5,4,6,3,9,7,7,4,8,7,9,2,6,5,6,2,8,8,7,,,,,,,
+Sabrina,sl5497a@student.american.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2023,1,2,6,2,8,3,7,3,7,8,1,8,4,5,6,3,1,7,4,6,1,6,6,7,7,9,7,2,4,5,7,8,5,6,5,6,5,6,7,7,,,,,,,
+Jessica Wu,jvw13@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2023,1,2,7,9,5,5,5,7,2,2,7,4,1,3,8,5,2,5,1,5,1,3,3,5,1,9,3,2,3,7,2,6,1,2,7,8,8,6,3,2,,,,,,,
+Rachel Son,rcs121@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,6,6,2,5,6,4,5,7,3,9,7,2,3,6,4,7,2,7,2,7,7,9,9,9,2,2,3,7,8,6,8,2,6,6,3,7,6,9,,,,,,,
+Maya Snyder,mes414@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2024,1,2,6,7,8,3,7,2,7,3,2,4,3,2,3,3,3,7,5,3,2,2,2,7,4,9,4,2,3,7,4,5,5,4,7,8,6,6,4,3,,,,,,,
+Alyssa Paek,ajp323@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,7,7,7,7,5,6,7,4,4,8,4,2,2,5,1,7,5,5,1,6,3,6,3,8,1,1,3,6,7,1,8,3,6,8,4,4,4,6,,,,,,,
+Michelle Ng,mwn14@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2023,1,2,7,9,5,6,2,7,6,9,3,8,2,4,3,3,7,4,2,7,2,6,6,7,2,8,1,1,3,7,5,1,3,4,6,8,6,6,6,6,,,,,,,
+John,zg102@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2023,1,2,9,4,2,9,1,6,9,7,2,6,9,5,9,5,1,9,1,9,1,9,6,9,1,9,9,1,2,8,9,9,1,9,9,9,2,6,9,4,,,,,,,
+Corrinne McKenna,cm2452a@student.American.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2022,1,2,7,5,9,5,5,7,9,5,5,6,3,1,5,4,5,5,5,6,1,5,5,9,6,7,1,1,1,1,9,4,6,9,5,9,5,5,7,9,,,,,,,
+Sarah Silver,sas529@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,9,6,9,2,3,2,8,4,6,7,3,1,7,7,7,4,6,4,1,6,8,8,2,9,2,3,1,6,7,7,1,3,4,8,7,7,4,6,,,,,,,
+Veronika,veronika_lin25@gwu.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),George Washington University,2025,1,2,4,6,5,9,6,5,7,6,2,9,4,1,9,3,3,8,6,5,1,1,8,9,7,6,1,2,4,7,3,5,5,1,9,2,3,4,1,3,,,,,,,
+noriko,no213@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2024,1,2,4,7,5,5,7,4,4,4,7,8,6,3,6,4,7,5,6,5,1,6,8,8,3,9,4,3,1,6,4,7,2,4,6,6,5,4,5,6,,,,,,,
+Minna,mh1873@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2022,1,2,7,2,6,5,5,1,5,1,2,9,1,2,6,6,6,5,1,4,1,1,5,9,1,8,1,1,1,8,8,3,1,4,8,6,8,5,5,8,,,,,,,
+Mioko,mmu11@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2024,1,2,3,5,6,4,6,4,6,8,3,6,4,1,4,6,7,3,4,5,1,4,5,4,1,7,4,4,3,9,3,6,2,1,4,9,3,3,4,6,,,,,,,
+Amana Fujikawa,af1138@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2024,1,2,7,4,7,7,5,4,5,6,3,7,6,3,3,6,4,4,4,7,1,4,4,7,3,9,2,3,3,8,4,8,2,6,4,7,4,7,6,4,,,,,,,
+Angelette Pham,anp78@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2024,1,2,7,7,9,3,5,6,3,3,3,7,4,2,3,4,7,2,7,6,1,6,2,9,2,6,1,1,3,6,7,1,5,2,5,6,7,6,8,5,,,,,,,
+Murphy,ml1809@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2023,1,2,8,5,9,9,5,6,6,3,4,9,4,1,8,2,1,8,3,4,1,3,1,5,5,4,1,1,4,5,3,1,1,3,6,7,4,5,4,7,,,,,,,
+Kristy Wong,kw802@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2024,1,2,4,4,7,4,7,3,8,6,3,9,6,2,4,5,1,9,3,9,1,8,7,7,4,4,1,1,4,6,8,1,8,3,6,5,6,5,6,6,,,,,,,
+Adora Zheng,Ayz16@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,3,9,9,4,6,8,9,8,2,9,7,3,6,2,3,7,3,4,1,3,5,9,8,9,1,2,3,6,6,8,2,4,8,8,6,4,3,6,,,,,,,
+Selina Xin,rx31@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2023,1,2,7,9,9,3,8,3,3,7,3,9,3,2,1,6,6,4,3,1,3,1,8,4,9,7,7,3,3,6,8,7,1,6,6,6,5,5,2,4,,,,,,,
+Shana Shin,ss4012@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2022,1,2,3,2,8,7,5,4,7,4,6,6,6,2,7,7,4,7,5,2,4,6,4,3,4,7,4,2,3,6,4,5,6,5,3,8,3,3,4,5,,,,,,,
+Caroline Gong,cjg116@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,2,6,9,4,7,2,9,8,1,9,5,2,7,9,1,8,2,7,1,9,3,7,9,7,1,1,2,8,9,1,7,1,7,3,6,3,8,9,,,,,,,
+Anqi Feng,af1139@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2024,1,2,5,7,9,5,3,9,6,8,4,7,2,1,2,2,1,9,5,2,3,6,5,7,8,9,6,2,4,7,7,6,5,6,7,6,7,7,6,7,,,,,,,
+Maggie!!!!,mhf58@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,8,4,5,4,8,3,5,5,3,7,3,5,4,3,4,6,4,4,2,3,6,3,3,9,2,2,3,6,5,2,3,3,5,9,4,6,3,3,,,,,,,
+Thanh Tran,thanhxtran@gwmail.gwu.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),George Washington University,2025,1,2,7,8,9,5,2,6,5,7,4,8,8,3,9,5,9,5,6,4,1,2,8,8,3,9,4,4,3,9,4,9,8,2,2,8,6,3,3,2,,,,,,,
+Kimberly Nguyen,khn16@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2023,1,2,6,5,7,7,5,6,4,4,4,9,7,1,6,9,3,6,5,5,1,4,7,9,1,8,3,2,3,9,9,8,5,5,7,4,7,3,6,9,,,,,,,
+Molly Zhou,mz540@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2023,1,2,9,3,7,7,1,2,7,2,2,7,8,2,7,6,1,9,7,6,2,4,8,7,2,9,4,2,7,6,7,4,2,3,7,7,3,2,6,8,,,,,,,
+Gabby,gu2018@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,6,5,4,7,6,6,4,6,4,8,6,2,8,3,5,5,4,5,2,5,7,8,2,9,5,7,2,5,4,8,3,3,7,9,6,6,5,5,,,,,,,
+Hanna Tibbetts,ht2113a@student.american.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),American University,2024,1,2,5,4,7,5,8,5,5,8,3,9,3,3,4,7,4,3,7,4,4,4,4,8,9,9,2,3,4,6,6,6,4,3,6,9,6,6,7,3,,,,,,,
+Anna Cheng,ac2269@georgetown.edu,Maybe more than platonic (terms of this are up to you and your match ¯\_(ツ)_/¯),Georgetown University,2025,1,2,6,3,9,7,5,5,7,4,2,6,8,2,6,6,4,9,1,2,1,4,4,9,5,7,1,1,3,8,7,2,1,3,6,6,5,2,6,7,,,,,,,

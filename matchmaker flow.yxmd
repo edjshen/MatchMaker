@@ -1,0 +1,611 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="174" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Matchmaker Official.xlsx
+Query=`Form Responses 1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="name" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="V_WString" />
+            <Field name="email" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="V_String" />
+            <Field name="type" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="V_WString" />
+            <Field name="school" size="255" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="V_String" />
+            <Field name="year" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="gender" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="pref" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="1. I would go on a spontaneous trip, even if it meant putting off my responsibilities" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="2. I like doing nothing all day" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="3. I have to love myself before I love someone else" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="4. I tend to dwell on the" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="5. I would rather spend my birthday with my family than my friends" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="6. I like to splurge on myself regularly" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="7. Every day, love is a choice" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="8. If someone is late to a meeting time that we agreed to earlier, it bothers me" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="9. I think it's okay to go on your phone during a date" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="10. No matter how busy you are, if you really care, you will find the time for someone" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="11. I say what is bothering me, even if it makes the other person uncomfortable" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="12. In every disagreement, one side is right and one side is wrong" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="13. Science will eventually explain everything" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="14. I would want my partner and I to share our locations with each other" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="15. I would end a friendship over differing political views" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="16. I would start a friendship with someone who has differing political views" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="17. I would rather plan my own birthday party than have someone plan a surprise party for me" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="18. I want my partner and my friends to hang out, sometimes even without me" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="19. If it is someone else's job to clean, you can leave behind a mess" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="20. I like public displays of affection" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="22. It upsets me to not be the best at something" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="23. I try to remember little details about people" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="24. I usually start my assignments with ample time before the due date" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="25. I'm okay with my partner drinking" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="26. I'm okay with my partner smoking cigarettes" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="28. I'm okay with my partner doing drugs (other than weed)" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="29. I politically lean" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="30. My Asian identity is one of the most important things to me" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="21. I usually hug people when expressing affection" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="27. I'm okay with my partner smoking weed" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="31. Religion is important to me" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="32. I believe in love at first sight" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="33. I expect my partner and I to spend a lot of time together" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="34. I jaywalk" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="35. Another person's opinion would change what I decide to do" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="36. I think it's more important to protect someone's feelings than it is to tell the truth" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="37. I would want my partner and I to use pet names (i.e. babe, honey)" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+            <Field name="38. I would want my partner and I to send good morning/good night texts" source="File: C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\Matchmaker Official.xlsx|||`Form Responses 1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="270" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>type</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-04-16 14:11:36</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>more than platonic</Operand>
+              <StartDate>2022-04-16 14:11:36</StartDate>
+              <EndDate>2022-04-16 14:11:36</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([type],"more than platonic")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="366" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>gender</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-04-16 14:18:21</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2022-04-16 14:18:21</StartDate>
+              <EndDate>2022-04-16 14:18:21</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[gender] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="366" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>gender</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-04-16 14:20:05</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2</Operand>
+              <StartDate>2022-04-16 14:20:05</StartDate>
+              <EndDate>2022-04-16 14:20:05</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[gender] = 2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="366" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>gender</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-04-16 14:20:23</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>3</Operand>
+              <StartDate>2022-04-16 14:20:23</StartDate>
+              <EndDate>2022-04-16 14:20:23</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[gender] = 3</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="414" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>pref</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-04-16 14:24:05</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2</Operand>
+              <StartDate>2022-04-16 14:24:05</StartDate>
+              <EndDate>2022-04-16 14:24:05</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[pref] = 2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="438" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>pref</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-04-16 14:26:31</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>3</Operand>
+              <StartDate>2022-04-16 14:26:31</StartDate>
+              <EndDate>2022-04-16 14:26:31</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[pref] = 3</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="342" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>pref</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-04-16 14:26:31</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2022-04-16 14:26:31</StartDate>
+              <EndDate>2022-04-16 14:26:31</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[pref] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="534" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>gender</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-04-16 14:18:21</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2022-04-16 14:18:21</StartDate>
+              <EndDate>2022-04-16 14:18:21</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[gender] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="726" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>gender</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-04-16 14:20:05</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2</Operand>
+              <StartDate>2022-04-16 14:20:05</StartDate>
+              <EndDate>2022-04-16 14:20:05</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[gender] = 2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="534" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>gender</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-04-16 14:18:21</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2022-04-16 14:18:21</StartDate>
+              <EndDate>2022-04-16 14:18:21</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[gender] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="726" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>gender</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-04-16 14:20:05</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2</Operand>
+              <StartDate>2022-04-16 14:20:05</StartDate>
+              <EndDate>2022-04-16 14:20:05</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[gender] = 2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="546" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>gender</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-04-16 14:18:21</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2022-04-16 14:18:21</StartDate>
+              <EndDate>2022-04-16 14:18:21</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[gender] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="738" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>gender</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-04-16 14:20:05</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2</Operand>
+              <StartDate>2022-04-16 14:20:05</StartDate>
+              <EndDate>2022-04-16 14:20:05</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[gender] = 2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="954" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\edjsh\OneDrive - Georgetown University\Documents\GitHub\MatchMaker\romantic bi(match with any).xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>romantic bi(match with any).xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="False" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="False" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="False" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="True" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="True" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="True" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>matchmaker flow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="eabfba64-080c-43db-9f6d-7ee6a9e75340" />
+      <Telemetry>
+        <PreviousWorkflowId value="bfd894b7-3fb8-48de-a6bd-6da727407280" />
+        <OriginWorkflowId value="bfd894b7-3fb8-48de-a6bd-6da727407280" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
