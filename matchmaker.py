@@ -27,7 +27,7 @@ def loadCSV():
     file = input("Enter CSV file\n")
     global people
     global lenP
-    people = read_csv(file)
+    people = read_csv(file, encoding='cp1252')
     people_length = len(people.columns)
     people = people.to_dict('records')  
     print("Data file Successfully Loaded")
