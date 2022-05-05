@@ -77,9 +77,7 @@ def alg(peopleX,peopleY):
     lenPx = len(peopleX)
     lenPy = len(peopleY)
     lenP = len(people)
-    #print(people)
-    #print(lenPx,lenPy,lenP)
-    #print(peopleX)
+
     
     holdNames = []
     heldName = ""
@@ -93,29 +91,20 @@ def alg(peopleX,peopleY):
     goAheadM = 0
     noMatchList = []
     noMatchEmailList = []
-    
-    #while(counting < len(people[0].keys())-2):
+
         
     
     #Looping through Person X (rows)
     while(len(peopleX) > 0):
-        # do bestMatchIndex+1 as second argument if lists are different sizes
-        #print("This is i ", i)
-        #print(peopleX)
-        #print("I am finding the perfect match for",peopleX[0]["name"])
-        #Looping through all Person Ys (Columns)
+
         while(colCounter < lenPy):
             goAhead = 0
             goAheadT = 0
             goAheadM = 0
-            #print("heyo")
-            #print(lenPy) 
-            #lenPy = len(peopleY)
-            #print("this is lenPy",lenPy)
+
             #make special case for last two people
             if(lenPy <= 2):
-                #print("We're on our last possible candidate!\n")
-                #print(peopleX)
+
                 
                 q1ScorePx = peopleX[0]["q1"]
                 q2ScorePx = peopleX[0]["q2"]
@@ -304,69 +293,30 @@ def alg(peopleX,peopleY):
                 
                 matchScore = abs(totalPx - totalPy)
                 matchScoreList.append(matchScore)
-                """
-                bestScore = max(matchScoreList)
-                bestMatchIndex = matchScoreList.index(bestScore)
-                bestMatchName = matchScoreList[bestMatchIndex]
-                bestMatchList.append(bestMatchName)
-                bestScoreList.append(bestScore)
-                """
                 
             
-                
-                #print(peopleX[0]["name"],"'s"," best match is " , bestMatchName)
-                #print("My match score with", bestMatchName, " is ", matchScoreList[bestMatchIndex])
+              
                 bestMatchName = people[colCounter]["name"]
                 bestMatchList.append(bestMatchName)
                 bestMatchEmail = people[colCounter]["email"]
                 bestMatchEmailList.append(bestMatchEmail)
 
-                #peopleY.pop(matchScoreList[bestMatchIndex])
-                #print("I AM RUNINGDKADLFJADLKFJAD;FJDA;KLJFKLADSF")
                 
                 
             else:
-                
-                #print("There is more than 1 person left to check\n")
-                #print(peopleX)
-                #print("i am running")
+
                 lenPx = len(peopleX)
                 lenPy = len(peopleY)
-                #print(lenPy)
-                #print(lenPx)
-                #print(lenPy)
-                #print(str(colCounter)+"]")
-                #print(people)
-                #print("PeopleX")
-                #print(peopleX)
-                #print("PeopleY")
-                #print(peopleY)
-                
-                #Check if people are the same, if they are, skip it, if not, search
-                #(colCounter >= lenPy):
-                #    colCounter  = min(colCounter,lenPy) - 1
-                #print(peopleY)
-                #print("Length of PeopleX = ",len(peopleX))
-                #print("Length of PeopleY = ",len(peopleY))
-                #print("Length of i = ",i)
-                #print("Length of colCounter = ",colCounter)
+
+
                 if(peopleX[0]["email"] == peopleY[colCounter]["email"]):
                     
                     notSame = 0
-                    #print("Person X Name ",peopleX[i]["name"])
-                    #print(peopleY)
-                    #print(colCounter)
-                    #print("Person Y Name ", peopleY[colCounter]["name"])
+
                 else:
-                    #print(peopleX[i]["email"])
-                    #print(peopleY[colCounter]["email"])
+
                     notSame = 1
-                    #print("this is i ",i)
-                    #print(peopleX)
-                    #print("Person X Name ",peopleX[i]["name"])
-                    #print(peopleY)
-                    #print(colCounter)
-                    #print("Person Y Name ", peopleY[colCounter]["name"])
+
                 #sum up all question scores
                 
                 if(peopleX[0]["pref"] == 3 and peopleX[0]["gender"] == peopleY[colCounter]["pref"]):
@@ -522,39 +472,20 @@ def alg(peopleX,peopleY):
                         q33ScorePy+
                         q34ScorePy
                         )
-                        #print(peopleX[i])
-                        #print(peopleY[colCounter])
-                        #print(totalPx)
-                        #print(totalPy)
+
                         
                         matchScore = abs(totalPx - totalPy)
                         matchScoreList.append(matchScore)
                                    
         # Finding who is best match, adding them to output list, and deleting matches from general population
     
-                        #print("Length of PeopleX = ",len(peopleX))
-                        #print("Length of PeopleY = ",len(peopleY))
-                        #print("Length of i = ",i)
-                        #print("Length of colCounter = ",colCounter)
-                
-                        #bestScore = max(matchScoreList)
-                        #bestScoreList.append(bestScore)
-                        #bestMatchIndex = matchScoreList.index(bestScore)
-                        #print("i have ran" + str(colCounter) + " Y people")
-                        #print(peopleX)
-                        #print(colCounter)
+
                         
                         bestMatchName = people[colCounter]["name"]
                         bestMatchEmail = people[colCounter]["email"]
                         bestMatchList.append(bestMatchName)
                         bestMatchEmailList.append(bestMatchEmail)
                         
-                        #print(peopleX)
-                        #print()
-                        #print("I am the best match", bestMatchName)
-                        #print(bestScore)
-                        #print(peopleY)
-                        #holder = peopleY.pop(colCounter)
                 
                         lenPx = len(peopleX)
                         lenPy = len(peopleY)
@@ -572,16 +503,8 @@ def alg(peopleX,peopleY):
                     pass
                     
                 
-            #print("This is column counter: ", str(colCounter),
-            #      " and this is the match person being tested" ,peopleY[colCounter]["name"])
+            
             colCounter = colCounter + 1
-            #print("i have looped ",colCounter," times")
-            #print("My name is ", peopleX[0]["name"], "my match score is "
-            #     , matchScore, "and my current testing partner's name is",bestMatchName)
-            #print(lenPy)
-            #print(colCounter)
-        #holder = peopleX.pop(i)
-        #print(bestScoreList)
         
         if(len(matchScoreList) == 0):
             break
@@ -597,27 +520,16 @@ def alg(peopleX,peopleY):
             noMatchEmailList.append(peopleX[0]["email"])
         
         bestMatchIndex = matchScoreList.index(bestScore)
-        #print("i have ran" + str(colCounter) + " Y people")
-        #print(peopleX)
+    
         bestMatchName = bestMatchList[bestMatchIndex]
         bestMatchEmail = bestMatchEmailList[bestMatchIndex]
-        #print(peopleX[0]["name"],"'s"," best match is " , bestMatchName)
-        #print("My match score with", bestMatchName, " is ", matchScoreList[bestMatchIndex])
+      
         outputMatches = {"name" : peopleX[0]["name"], "score" : matchScoreList[bestMatchIndex],
                          "partner" : bestMatchName,"email":people[0]["email"], "partner email": bestMatchEmail}
         outputMatchesList.append(outputMatches)
-        #print(peopleX[i])
+
         i = i + 1
-        #Clear Variables for next iteration of PersonX
-        #colCounter = 0
-         
-        #peopleX.pop(matchScoreList[bestMatchIndex])
-        #print(peopleY)
-        #print(bestMatchIndex)
-        #print("hey")
-        #print(peopleY)
-        #print(bestMatchIndex)
-        #print(len(peopleY))
+
         if (len(peopleY) > bestMatchIndex+1):
         #delete match made, need to hammer this out, doesn't work for all cases
             trashY = peopleY.pop(bestMatchIndex+1)
@@ -693,89 +605,13 @@ def alg(peopleX,peopleY):
             counterV = counterV + 1
             
 if __name__ == "__main__": 
-    """
-    IMPORTANT NOTE! THIS ALGORITHM IS CURRENTLY GENDER AND SEXUAL ORIENTATION AGNOSTIC,
-    It is important to clean and sort the data before processing using this algorithm
-    PLUG IN FIRST POPULATION AS PEOPLEX, IE STRAIGHT MEN, THEN THEIR PREFERENCE POOL, STRAIGHT/BI WOMEN
-    """
+
     peopleX = loadCSV()
     fileX = file
     peopleY = loadCSV()
     fileY = file
     alg(peopleX,peopleY)
     
-    """
-    i = 0
-    
-    #alg()
-    romantic = []
-    platonic = []
-    straightM = []
-    straightF = []
-    gayM = []
-    gayF = []
-    BiM = []
-    BiF = []
-    nonBin = []
-    people = loadCSV()
-    
-    #loading different pools for different gender/sexual orientation
-    while(i<len(people)):
-        #split into romantic and platonic
-        #print(people[i]["pref"])
-        if(people[i]["pref"] == "R"):   
-            romantic.append(people[i])
-        else:
-            platonic.append(people[i])
-        i = i+1
-                     
-    i = 0
-    while(i<len(romantic)):
-        #different sexual orientation sorting
-        #print(romantic)
-        print(i)
-        if(romantic[i]["gender"] == "M" and romantic[i]["orientation"] == "S"):
-            #Straight Men
-            print("added")
-            straightM.append(romantic[i])
 
-        elif(romantic[i]["gender"] == "M" and romantic[i]["orientation"] == "G"):
-            #Gay Men
-            gayM.append(romantic[i])
-
-        elif(romantic[i]["gender"] == "F" and romantic[i]["orientation"] == "S"):
-            #Straight Women
-            straightF.append(romantic[i])
-
-        elif(romantic[i]["gender"] == "F" and romantic[i]["orientation"] == "G"):
-            #Gay Women
-            gayF.append(romantic[i])
-       
-        elif(romantic[i]["gender"] == "M" and romantic[i]["orientation"] == "B"):
-            #Bi Men
-            BiM.append(romantic[i])
-
-        elif(romantic[i]["gender"] == "F" and romantic[i]["orientation"] == "B"):
-            #Bi Women
-            BiF.append(romantic[i])
-
-        elif(romantic[i]["gender"] == "X" and romantic[i]["orientation"] == "X"):
-            #Non-binary
-            nonBin.append(romantic[i])
-        
-        i = i+1
-    print(straightM)
-    #alg(straightM,straightF)
-    #alg(gayM,gayM)
-    #alg(gayF,gayF)
-    #alg(BiM,gayM)
-    #alg(platonic,platonic)
-
-    """
-            
-    
-    
-    
-    
 
     
