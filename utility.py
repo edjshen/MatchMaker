@@ -7,6 +7,10 @@ Created on Thu May  5 19:00:20 2022
 
 from pandas import read_csv
 import csv
+from dotenv import load_dotenv
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
+import os
 
 def loadCSV():
     global file
@@ -30,6 +34,34 @@ def isEmpty(lis1):
         return 0
     else:
         return 1
+    
+def sendEmail(name, matchName, email, matchEmail):
+    load_dotenv()
+    SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY", default="OOPS, please set env var called 'SENDGRID_API_KEY'")
+    SENDER_ADDRESS = os.getenv("SENDER_ADDRESS", default="OOPS, please set env var called 'SENDER_ADDRESS'")
+    email = input("Enter your email to receive an email receipt or enter N\n\n")
+    
+    client = SendGridAPIClient(SENDGRID_API_KEY) #> <class 'sendgrid.sendgrid.SendGridAPIClient>
+    if(email == "n" or email == "N"):
+        return 0
+    else:
+    
+        subject = "Dear " + name + ", We've found your match"
+        html_content = "Your Match is: " + matchName + " and their contact is " + matchEmail
+            
+        # FYI: we'll need to use our verified SENDER_ADDRESS as the `from_email` param
+        # ... but we can customize the `to_emails` param to send to other addresses
+        message = Mail(from_email=SENDER_ADDRESS, to_emails=email, subject=subject, html_content=html_content)
+        
+        try:
+            response = client.send(message)    
+            #print("RESPONSE:", type(response)) #> <class 'python_http_client.client.Response'>
+            #print(response.status_code) #> 202 indicates SUCCESS
+            #print(response.body)
+            #print(response.headers)    
+        except Exception as err:
+            print(type(err))
+            print(err)
 
 def assignNot(peopleX):
     q1ScorePx = peopleX[0]["q1"]
