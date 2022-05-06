@@ -12,11 +12,9 @@ from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 import os
 
-def loadCSV():
-    global file
+def loadCSV(file):
     global people_length
     #file = os.path.join(os.path.dirname(__file__), "data","data - Form Responses 1.csv")  
-    file = input("Enter CSV file\n")
     global people
     global lenP
     people = read_csv(file, encoding='cp1252')

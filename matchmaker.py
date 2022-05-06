@@ -4,15 +4,6 @@ Created on Sun Feb 27 17:36:31 2022
 
 @author: ejs et tz
 """
-from datetime import datetime
-import os
-from dotenv import load_dotenv
-from pathlib import Path
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
-import pandas as pd
-from pandas import read_csv
-from pandas import DataFrame
 import csv
 from utility import *
 people_length = 0
@@ -25,15 +16,7 @@ def alg(peopleX,peopleY,people):
     #declare variables
     #peopleX = []
     #peopleY = []
-    lenPX = 0
-    lenPY = 0
     i = 0
-    q1ScorePx = 0
-    q1ScorePy = 0
-    q2ScorePx = 0
-    q2ScorePy = 0
-    q3ScorePx = 0
-    q3ScorePy = 0
     totalPx = 0
     totalPy = 0
     matchScore = 0
@@ -46,37 +29,33 @@ def alg(peopleX,peopleY,people):
     colCounter = 0
     outputMatches = {}
     outputMatchesList =[]
-    
-    #load in data file
-    #initial assignments to variables
-    
     lenPx = len(peopleX)
     lenPy = len(peopleY)
     lenP = len(people)
+   
 
-    
-    holdNames = []
-    heldName = ""
     
     notSame = 0
     bestMatchEmailList = []
-    couting = 0
     goAhead = 0
     goAheadT = 0
     goAheadM = 0
     noMatchList = []
     noMatchEmailList = []
-
+    
+    #
     #Looping through Person X (rows)
+    #
     while(len(peopleX) > 0):
 
         while(colCounter < lenPy):
-            goAhead = 0
-            goAheadT = 0
             goAheadM = 0
 
             lenPx = len(peopleX)
             lenPy = len(peopleY)
+            #
+            # Checks if we are someone with themselves
+            #
             if(peopleX[0]["email"] == peopleY[colCounter]["email"]): 
                 notSame = 0
             else:
@@ -120,6 +99,10 @@ def alg(peopleX,peopleY,people):
             pass 
         bestScore = min(matchScoreList)
         
+        #
+        #Reconciling people who didn't match
+        #
+        
         if(bestScore == 100000):
             noMatchList.append(peopleX[0]["name"])
             noMatchEmailList.append(peopleX[0]["email"])
@@ -142,12 +125,13 @@ def alg(peopleX,peopleY,people):
             trashX = peopleX.pop(bestMatchIndex+1) 
             trashX = peopleX.pop(0)
         
-        #print(trashX)
+        #
+        #Resetting variables for next loop through
+        #
         colCounter = 0
         matchScoreList = []
         matchScore = 0
         bestScore = 0
-        #bestMatchIndex = 0
         bestMatchName = 0
         holder = 0
         bestScoreList =[]
@@ -165,7 +149,7 @@ def alg(peopleX,peopleY,people):
     
     #Output
     #write to csv
-    
+    #
     counterV = 0
     print("OUTPUTS")
     print("--------------------------")
@@ -192,6 +176,11 @@ def alg(peopleX,peopleY,people):
             print("--------------------------")
             counterV = counterV + 1
     counterV = 0     
+    
+    #
+    #writing out people who didn't match
+    #
+    
     with open('didnotmatch.csv', 'a', encoding='UTF8') as f:
         writer = csv.writer(f)
         while(counterV < len(noMatchList)):
@@ -204,15 +193,14 @@ def test_always_passes():
 
 def test_always_fails():
     assert False
+    
 def testAlg():
-    assert alg(peopleX,peopleY)
+    assert alg(peopleX,peopleY,people)
             
 if __name__ == "__main__": 
-
-    peopleX = loadCSV()
-    fileX = file
-    peopleY = loadCSV()
-    fileY = file
+    fileName = input("Enter a csv file containing people you'd like to match\n")
+    peopleX = loadCSV(fileName)
+    peopleY = loadCSV(fileName)
     alg(peopleX,peopleY,peopleX)
     
 
