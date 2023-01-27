@@ -14,7 +14,8 @@ import os
 
 def loadCSV(file):
     global people_length
-    #file = os.path.join(os.path.dirname(__file__), "data","data - Form Responses 1.csv")  
+    #file = os.path.join(os.path.dirname(__file__), "data","data - Form Responses 1.csv")
+    #file = input("Enter File Name")
     global people
     global lenP
     people = read_csv(file, encoding='cp1252')
@@ -26,6 +27,36 @@ def loadCSV(file):
     #lenP = len(people)
     #print(people)
     return people
+
+# Import the library
+from tkinter import *
+from tkinter import filedialog
+
+
+
+# Function to open a file in the system
+def open_file():
+    # Create an instance of window
+    win=Tk()
+
+    # Set the geometry of the window
+    win.geometry("700x300")
+
+    # Create a label
+    Label(win, text="Click the button to open a dialog", font='Arial 16 bold').pack(pady=15)
+    filepath = filedialog.askopenfilename(title="Open a CSV File", filetypes=(("csv    files","*.csv"), ("all files","*.*")))
+    #file = open(filepath,'r')
+    #print(file.read())
+    #file.close()
+    
+    # Create a button to trigger the dialog
+    button = Button(win, text="Open", command=open_file)
+    button.pack()
+
+    win.mainloop()
+    return filepath
+
+
 
 def isEmpty(lis1):
     if not lis1:

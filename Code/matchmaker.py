@@ -4,8 +4,7 @@ Created on Sun Feb 27 17:36:31 2022
 
 @author: ejs et tz
 """
-
-
+import streamlit as st
 from datetime import datetime
 import os
 import pandas as pd
@@ -209,10 +208,12 @@ def testAlg():
     assert alg(peopleX,peopleY)
             
 if __name__ == "__main__": 
-
-    peopleX = loadCSV()
+    file = open_file()
+    file = str(file)
+    #file = "C:/Users/edjsh/OneDrive - Georgetown University/Documents/GitHub/MatchMaker/Code/testdata.csv"
+    peopleX = loadCSV(file)
     fileX = file
-    peopleY = loadCSV()
+    peopleY = loadCSV(file)
     fileY = file
     alg(peopleX,peopleY,peopleX)
     
