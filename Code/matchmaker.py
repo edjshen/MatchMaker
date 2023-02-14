@@ -15,12 +15,95 @@ from sendgrid.helpers.mail import Mail
 from pandas import read_csv
 from pandas import DataFrame
 import csv
-from utility import *
+from pandas import read_csv
+
+
+def loadCSV(f):
+    global people_length
+    #file = os.path.join(os.path.dirname(__file__), "data","data - Form Responses 1.csv")
+    #file = input("Enter File Name")
+    global people
+    global lenP
+    people = read_csv(f, encoding='cp1252')
+    people_length = len(people.columns)
+    people = people.to_dict('records')  
+    print("Data file Successfully Loaded")
+    #print(products)
+    #print(products_csv)
+    #lenP = len(people)
+    #print(people)
+    return people
+
+# Import the library
+from tkinter import *
+from tkinter import filedialog
+
+
+
+# Function to open a file in the system
+def open_file():
+    # Create an instance of window
+    win=Tk()
+
+    # Set the geometry of the window
+    win.geometry("700x300")
+
+    # Create a label
+    Label(win, text="Click the button to open a dialog", font='Arial 16 bold').pack(pady=15)
+    filepath = filedialog.askopenfilename(title="Open a CSV File", filetypes=(("csv    files","*.csv"), ("all files","*.*")))
+    #file = open(filepath,'r')
+    #print(file.read())
+    #file.close()
+    
+    # Create a button to trigger the dialog
+    button = Button(win, text="Open", command=open_file)
+    button.pack()
+
+    win.mainloop()
+    return filepath
+
+
+
+def isEmpty(lis1):
+    if not lis1:
+        return 0
+    else:
+        return 1
+    
+def sendEmail(name, matchName, email, matchEmail):
+    load_dotenv()
+    SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY", default="OOPS, please set env var called 'SENDGRID_API_KEY'")
+    SENDER_ADDRESS = os.getenv("SENDER_ADDRESS", default="OOPS, please set env var called 'SENDER_ADDRESS'")
+    email = input("Enter your email to receive an email receipt or enter N\n\n")
+    
+    client = SendGridAPIClient(SENDGRID_API_KEY) #> <class 'sendgrid.sendgrid.SendGridAPIClient>
+    if(email == "n" or email == "N"):
+        return 0
+    else:
+    
+        subject = "Dear " + name + ", We've found your match"
+        html_content = "Your Match is: " + matchName + " and their contact is " + matchEmail
+            
+        # FYI: we'll need to use our verified SENDER_ADDRESS as the `from_email` param
+        # ... but we can customize the `to_emails` param to send to other addresses
+        message = Mail(from_email=SENDER_ADDRESS, to_emails=email, subject=subject, html_content=html_content)
+        
+        try:
+            response = client.send(message)    
+            #print("RESPONSE:", type(response)) #> <class 'python_http_client.client.Response'>
+            #print(response.status_code) #> 202 indicates SUCCESS
+            #print(response.body)
+            #print(response.headers)    
+        except Exception as err:
+            print(type(err))
+            print(err)
 people_length = 0
 
 fileX = 0
 fileY = 0
 file = 0
+numbers = []
+nQuestions = 34
             
 def alg(peopleX,peopleY,people):   
     #declare variables
@@ -89,11 +172,7 @@ def alg(peopleX,peopleY,people):
                 if(goAheadM == 1):
                     
                     
-                    totalPy = assignCol(peopleY,colCounter)
-                    
-                    totalPx = assignNot(peopleX)
-                    
-                    matchScore = abs(totalPx - totalPy)
+                    matchScore = assign(peopleX,peopleY,colCounter)
                     matchScoreList.append(matchScore)
                                
     # Finding who is best match, adding them to output list, and deleting matches from general population
@@ -120,27 +199,29 @@ def alg(peopleX,peopleY,people):
             pass 
         bestScore = min(matchScoreList)
         
-        if(bestScore == 100000):
-            noMatchList.append(peopleX[0]["name"])
-            noMatchEmailList.append(peopleX[0]["email"])
+        if(bestScore > 5000):
+            noMatchList.append(peopleY[colCounter]["name"])
+            noMatchEmailList.append(peopleY[colCounter]["email"])
         
         bestMatchIndex = matchScoreList.index(bestScore)
-    
         bestMatchName = bestMatchList[bestMatchIndex]
         bestMatchEmail = bestMatchEmailList[bestMatchIndex]
-      
+
         outputMatches = {"name" : peopleX[0]["name"], "score" : matchScoreList[bestMatchIndex],
-                         "partner" : bestMatchName,"email":people[0]["email"], "partner email": bestMatchEmail}
+                         "partner" : bestMatchName,"email":peopleX[0]["email"], "partner email": bestMatchEmail}
         outputMatchesList.append(outputMatches)
 
         i = i + 1
-
-        if (len(peopleY) > bestMatchIndex+1):
-            trashY = peopleY.pop(bestMatchIndex+1)
-            trashY = peopleY.pop(0) 
-        if (len(peopleX) > bestMatchIndex+1):
-            trashX = peopleX.pop(bestMatchIndex+1) 
-            trashX = peopleX.pop(0)
+        
+        trashX = peopleX.pop(0)
+        #print(bestMatchIndex+1)
+        trashY = peopleY.pop(bestMatchIndex)
+        #if (len(peopleY) > bestMatchIndex+1):
+            #trashY = peopleY.pop(bestMatchIndex+1)
+            #trashY = peopleY.pop(0) 
+        #if (len(peopleX) > bestMatchIndex+1):
+            #trashX = peopleX.pop(bestMatchIndex+1) 
+            #trashX = peopleX.pop(0)
         
         #print(trashX)
         colCounter = 0
@@ -155,7 +236,7 @@ def alg(peopleX,peopleY,people):
         bestMatchEmailList = []
         
     #calculating match percentage
-    maxPerc = (lenP*10)
+    maxPerc = (nQuestions*100)
     counterP = 0
     matchPercentList = []
     while(counterP < len(outputMatchesList)):     
@@ -198,26 +279,23 @@ def alg(peopleX,peopleY,people):
             data = [noMatchList[counterV],noMatchEmailList[counterV]]
             writer.writerow(data)
             counterV = counterV + 1
+    counterV = 0
+    with open('nomatch.csv', 'a', encoding='UTF8') as f:
+        writer = csv.writer(f)
+        while(counterV < len(peopleY)):
+            data = [peopleY[counterV]["name"],peopleY[counterV]["email"]]
+            writer.writerow(data)
+            counterV = counterV + 1
             
-def test_always_passes():
-    assert True
 
-def test_always_fails():
-    assert False
-def testAlg():
-    assert alg(peopleX,peopleY)
             
-if __name__ == "__main__": 
-    file = open_file()
-    file = str(file)
-    #file = "C:/Users/edjsh/OneDrive - Georgetown University/Documents/GitHub/MatchMaker/Code/testdata.csv"
-    peopleX = loadCSV(file)
-    fileX = file
-    peopleY = loadCSV(file)
-    fileY = file
-    alg(peopleX,peopleY,peopleX)
-    
-def assignNot(peopleX):
+def assign(peopleX,peopleY,colCounter):
+    squareScoreTotal = 0
+    sqrDif = 0
+    xList = []
+    yList = []
+    for x in range(1,34):
+        numbers.append(x)
     q1ScorePx = peopleX[0]["q1"]
     q2ScorePx = peopleX[0]["q2"]
     q3ScorePx = peopleX[0]["q3"]
@@ -252,46 +330,44 @@ def assignNot(peopleX):
     q32ScorePx = peopleX[0]["q32"]
     q33ScorePx = peopleX[0]["q33"]
     q34ScorePx = peopleX[0]["q34"]
+    #q35ScorePx = peopleX[0]["q35"]
     
-    totalPx = (q1ScorePx+
-    q2ScorePx+
-    q3ScorePx+
-    q4ScorePx+
-    q5ScorePx+
-    q6ScorePx+
-    q7ScorePx+
-    q8ScorePx+
-    q9ScorePx+
-    q10ScorePx+
-    q11ScorePx+
-    q12ScorePx+
-    q13ScorePx+
-    q14ScorePx+
-    q15ScorePx+
-    q16ScorePx+
-    q17ScorePx+
-    q18ScorePx+
-    q19ScorePx+
-    q20ScorePx+
-    q21ScorePx+
-    q22ScorePx+
-    q23ScorePx+
-    q24ScorePx+
-    q25ScorePx+
-    q26ScorePx+
-    q27ScorePx+
-    q28ScorePx+
-    q29ScorePx+
-    q30ScorePx+
-    q31ScorePx+
-    q32ScorePx+
-    q33ScorePx+
-    q34ScorePx
-    )
+    xList.append(q1ScorePx)
+    xList.append(q2ScorePx)
+    xList.append(q3ScorePx)
+    xList.append(q4ScorePx)
+    xList.append(q5ScorePx)
+    xList.append(q6ScorePx)
+    xList.append(q7ScorePx)
+    xList.append(q8ScorePx)
+    xList.append(q9ScorePx)
+    xList.append(q10ScorePx)
+    xList.append(q11ScorePx)
+    xList.append(q12ScorePx)
+    xList.append(q13ScorePx)
+    xList.append(q14ScorePx)
+    xList.append(q15ScorePx)
+    xList.append(q16ScorePx)
+    xList.append(q17ScorePx)
+    xList.append(q18ScorePx)
+    xList.append(q19ScorePx)
+    xList.append(q20ScorePx)
+    xList.append(q21ScorePx)
+    xList.append(q22ScorePx)
+    xList.append(q23ScorePx)
+    xList.append(q24ScorePx)
+    xList.append(q25ScorePx)
+    xList.append(q26ScorePx)
+    xList.append(q27ScorePx)
+    xList.append(q28ScorePx)
+    xList.append(q29ScorePx)
+    xList.append(q30ScorePx)
+    xList.append(q31ScorePx)
+    xList.append(q32ScorePx)
+    xList.append(q33ScorePx)
+    xList.append(q34ScorePx)
+    #xList.append(q35ScorePx)
     
-    return totalPx
-
-def assignCol(peopleY,colCounter):
     q1ScorePy = peopleY[colCounter]["q1"]
     q2ScorePy = peopleY[colCounter]["q2"]
     q3ScorePy = peopleY[colCounter]["q3"]
@@ -326,42 +402,76 @@ def assignCol(peopleY,colCounter):
     q32ScorePy = peopleY[colCounter]["q32"]
     q33ScorePy = peopleY[colCounter]["q33"]
     q34ScorePy = peopleY[colCounter]["q34"]
+    #q35ScorePy = peopleY[colCounter]["q35"]
     
-    totalPy = (q1ScorePy+
-    q2ScorePy+
-    q3ScorePy+
-    q4ScorePy+
-    q5ScorePy+
-    q6ScorePy+
-    q7ScorePy+
-    q8ScorePy+
-    q9ScorePy+
-    q10ScorePy+
-    q11ScorePy+
-    q12ScorePy+
-    q13ScorePy+
-    q14ScorePy+
-    q15ScorePy+
-    q16ScorePy+
-    q17ScorePy+
-    q18ScorePy+
-    q19ScorePy+
-    q20ScorePy+
-    q21ScorePy+
-    q22ScorePy+
-    q23ScorePy+
-    q24ScorePy+
-    q25ScorePy+
-    q26ScorePy+
-    q27ScorePy+
-    q28ScorePy+
-    q29ScorePy+
-    q30ScorePy+
-    q31ScorePy+
-    q32ScorePy+
-    q33ScorePy+
-    q34ScorePy
-    )
+    yList.append(q1ScorePy)
+    yList.append(q2ScorePy)
+    yList.append(q3ScorePy)
+    yList.append(q4ScorePy)
+    yList.append(q5ScorePy)
+    yList.append(q6ScorePy)
+    yList.append(q7ScorePy)
+    yList.append(q8ScorePy)
+    yList.append(q9ScorePy)
+    yList.append(q10ScorePy)
+    yList.append(q11ScorePy)
+    yList.append(q12ScorePy)
+    yList.append(q13ScorePy)
+    yList.append(q14ScorePy)
+    yList.append(q15ScorePy)
+    yList.append(q16ScorePy)
+    yList.append(q17ScorePy)
+    yList.append(q18ScorePy)
+    yList.append(q19ScorePy)
+    yList.append(q20ScorePy)
+    yList.append(q21ScorePy)
+    yList.append(q22ScorePy)
+    yList.append(q23ScorePy)
+    yList.append(q24ScorePy)
+    yList.append(q25ScorePy)
+    yList.append(q26ScorePy)
+    yList.append(q27ScorePy)
+    yList.append(q28ScorePy)
+    yList.append(q29ScorePy)
+    yList.append(q30ScorePy)
+    yList.append(q31ScorePy)
+    yList.append(q32ScorePy)
+    yList.append(q33ScorePy)
+    yList.append(q34ScorePy)
+    #yList.append(q35ScorePy)
     
-    return totalPy
+    scoreslist = []
+    i = 0
+    while(i<nQuestions):
+        sqrDif = (xList[i] - yList[i])**2
+        scoreslist.append(sqrDif)
+        i = i+1
+    i = 0
+    squareScoreTotal = 0
+    while(i<len(scoreslist)):
+        squareScoreTotal = scoreslist[i]+squareScoreTotal
+        i = i + 1
+    
+    xList = []
+    yList = []
+    scoreslist = [] 
+    return squareScoreTotal
+        
+    
+            
+if __name__ == "__main__": 
+
+    
+    filex = open_file()
+    filex = str(filex)
+    peopleX = loadCSV(filex)
+    #file = "C:/Users/edjsh/OneDrive - Georgetown University/Documents/GitHub/MatchMaker/Code/testdata.csv"
+    #fileX = file
+    
+    file1 = open_file()
+    file1 = str(file1)
+    peopleY = loadCSV(file1)
+    #fileY = file
+    alg(peopleX,peopleY,people)
+    
     
